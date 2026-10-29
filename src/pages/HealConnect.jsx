@@ -20,10 +20,15 @@ const capabilities = [
 ]
 
 const companionFlow = [
-  { icon: 'mic', title: 'Your Input', text: 'Voice journal: experiencing anxiety attacks during work meetings' },
-  { icon: 'sparkles', title: 'HealConnect™ Response', text: 'AI detected increasing anxiety patterns during scheduled meetings' },
-  { icon: 'stethoscope', title: 'Professional Care', text: 'Dr. Sarah (Psychiatrist) reviews anxiety patterns and updates treatment plan with specialized techniques' },
+  { icon: 'mic', title: 'Your Input', text: 'Voice journal: Experiencing anxiety attacks during work meetings' },
+  { icon: 'sparkles', title: 'HealConnect™ Response', text: 'AI detected increasing anxiety patterns during scheduled meetings, flagged for clinical review' },
+  { icon: 'stethoscope', title: 'Professional Care', text: 'AI provides immediate grounding techniques; Dr. Sarah (Psychiatrist) notified for urgent review', detail: 'Dr. Sarah (Psychiatrist) reviews anxiety patterns and updates treatment plan with specialized techniques' },
 ]
+
+const moods = ['😊 Joyful', '⚡ Energetic', '😌 Calm', '🎯 Focused', '😰 Anxious', '😴 Tired']
+const moodHours = ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00']
+const sleepBreakdown = [['7.2h', 'Total Sleep'], ['2.4h', 'Deep Sleep'], ['1.7h', 'REM'], ['3.1h', 'Light Sleep']]
+const weekDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
 const companionFeatures = [
   { icon: 'activity', title: 'Real-time Analysis', text: 'Continuous monitoring and analysis of user interactions, providing immediate insights and support recommendations.' },
@@ -181,10 +186,16 @@ export default function HealConnect() {
                 <p className="label-caps">{['Input', 'Analysis', 'Response'][i]}</p>
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
+                {s.detail && <p className="flow-detail">{s.detail}</p>}
               </div>
             </li>
           ))}
         </ol>
+        <div className="overall-progress">
+          <span>Overall Progress</span>
+          <div className="progress-bar" role="img" aria-label="Overall progress 82%"><span style={{ width: '82%' }} /></div>
+          <strong>82%</strong>
+        </div>
         <div className="mt-32"><CardGrid items={companionFeatures} cols={3} /></div>
 
         <h2 className="sub-heading">Daily Wellness Tracking</h2>
@@ -193,21 +204,39 @@ export default function HealConnect() {
           <article className="card">
             <h3>Mood Tracker</h3>
             <p>Track your daily emotional well-being</p>
+            <ul className="mood-chips">{moods.map((m) => <li key={m}>{m}</li>)}</ul>
+            <p className="mini-label">Today's Mood Pattern · Last 8 hours</p>
             <div className="mini-chart" aria-hidden="true">
               {[40, 55, 48, 62, 70, 66, 78, 82].map((h, i) => <span key={i} style={{ height: `${h}%` }} />)}
             </div>
-            <p className="card-note">Today's Mood Pattern · Last 8 hours<br />AI Analysis: Positive trend today</p>
+            <div className="axis">{moodHours.map((h) => <span key={h}>{h}</span>)}</div>
+            <p className="card-note">AI Analysis: Positive trend today<br />View Details ✓</p>
           </article>
           <article className="card">
             <h3>Sleep Insights</h3>
             <p>AI-powered sleep analysis</p>
-            <div className="sleep-score"><Icon name="moon" size={22} /><strong>94</strong><span>Optimal Pattern</span></div>
-            <p className="card-note">Weekly Sleep Pattern · Last 7 days<br />Sleep Schedule 22:30 - 07:00</p>
+            <div className="sleep-score"><Icon name="moon" size={22} /><strong>84</strong><span>Optimal Pattern</span></div>
+            <dl className="sleep-grid">
+              {sleepBreakdown.map(([v, l]) => <div key={l}><dt>{v}</dt><dd>{l}</dd></div>)}
+            </dl>
+            <p className="mini-label">Weekly Sleep Pattern · Last 7 days</p>
+            <div className="axis">{weekDays.map((d) => <span key={d}>{d}</span>)}</div>
+            <p className="card-note">Sleep Schedule 23:45 - 07:00</p>
           </article>
           <article className="card">
             <h3>Journal Entries</h3>
             <p>Track your thoughts and progress</p>
-            <div className="journal-lines" aria-hidden="true"><span /><span /><span /></div>
+            <p className="journal-days">Today 😌 · Today 😊 · Today 🤔 · Yesterday 🌟</p>
+            <div className="journal-entry">
+              <p className="journal-head"><strong>Morning Reflection</strong> <span>08:15 AM · Shared with Therapist</span></p>
+              <p>Started the day with a peaceful meditation session. Feeling more centered and ready to tackle the day ahead.</p>
+              <p className="journal-tags">#meditation #morning-routine #wellness</p>
+              <p className="label-caps">AI Insights</p>
+              <ul className="tag-list">
+                {['Positive morning routine', 'Mindfulness practice', 'Good emotional regulation'].map((t) => <li key={t}>{t}</li>)}
+              </ul>
+              <p className="journal-actions">Add Comment · Mark Important · View Full Entry →</p>
+            </div>
             <p className="card-note">+ New Entry</p>
           </article>
         </div>
@@ -218,15 +247,21 @@ export default function HealConnect() {
           {progress.map((p) => (
             <article key={p.title} className="card">
               <h3>{p.title}</h3>
-              <p className="progress-provider">Provider: {p.provider}<br />Next: {p.next}</p>
+              <p className="progress-provider">Provider: {p.provider}<br />Next Appointment: {p.next}</p>
               <div className="progress-bar" role="img" aria-label={`Progress ${p.pct}%`}>
                 <span style={{ width: `${p.pct}%` }} />
               </div>
               <p className="progress-pct">Progress {p.pct}%</p>
               <ol className="progress-steps">
-                {p.steps.map((st, i) => (
-                  <li key={st} className={i < Math.round((p.pct / 100) * p.steps.length) ? 'is-done' : ''}>{st}</li>
-                ))}
+                {p.steps.map((st, i) => {
+                  const done = Math.floor((p.pct / 100) * p.steps.length)
+                  const status = i < done ? 'completed' : i === done ? 'in-progress' : 'pending'
+                  return (
+                    <li key={st} className={`is-${status}`}>
+                      {st} <em>{status}</em>
+                    </li>
+                  )
+                })}
               </ol>
               <p>{p.note}</p>
             </article>
