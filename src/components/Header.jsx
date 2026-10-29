@@ -8,11 +8,7 @@ function Dropdown({ item, open, onOpen, onClose }) {
   const { pathname } = useLocation()
   const active = item.children.some((c) => pathname === c.to)
   return (
-    <div
-      className={`nav-item has-menu${open ? ' is-open' : ''}`}
-      onMouseEnter={onOpen}
-      onMouseLeave={onClose}
-    >
+    <div className={`nav-item has-menu${open ? ' is-open' : ''}`} onMouseEnter={onOpen} onMouseLeave={onClose}>
       <button
         className={`nav-link${active ? ' is-active' : ''}`}
         aria-expanded={open}
@@ -70,44 +66,46 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`site-header${scrolled ? ' is-scrolled' : ''}${drawer ? ' menu-open' : ''}`}>
-      <div className="container header-bar">
-        <Logo />
-        <nav className="desktop-nav" aria-label="Main" ref={navRef}>
-          {mainNav.map((item) =>
-            item.children ? (
-              <Dropdown
-                key={item.label}
-                item={item}
-                open={openMenu === item.label}
-                onOpen={() => setOpenMenu(item.label)}
-                onClose={() => setOpenMenu(null)}
-              />
-            ) : (
-              <div className="nav-item" key={item.to}>
-                <NavLink to={item.to} className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}>
-                  {item.label}
-                </NavLink>
-              </div>
-            ),
-          )}
-        </nav>
-        <div className="header-actions">
-          <Link to="/early-access" className="btn btn-primary btn-sm header-cta">
-            Get early access
-          </Link>
-          <button
-            className="drawer-toggle"
-            aria-label={drawer ? 'Close menu' : 'Open menu'}
-            aria-expanded={drawer}
-            aria-controls="mobile-menu"
-            onClick={() => setDrawer((d) => !d)}
-          >
-            <Icon name={drawer ? 'close' : 'menu'} />
-          </button>
+    <>
+      <header className={`site-header${scrolled ? ' is-scrolled' : ''}${drawer ? ' menu-open' : ''}`}>
+        <div className="container header-bar">
+          <Logo />
+          <nav className="desktop-nav" aria-label="Main" ref={navRef}>
+            {mainNav.map((item) =>
+              item.children ? (
+                <Dropdown
+                  key={item.label}
+                  item={item}
+                  open={openMenu === item.label}
+                  onOpen={() => setOpenMenu(item.label)}
+                  onClose={() => setOpenMenu(null)}
+                />
+              ) : (
+                <div className="nav-item" key={item.to}>
+                  <NavLink to={item.to} className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}>
+                    {item.label}
+                  </NavLink>
+                </div>
+              ),
+            )}
+          </nav>
+          <div className="header-actions">
+            <Link to="/early-access" className="btn btn-primary btn-sm header-cta">
+              Get early access
+            </Link>
+            <button
+              className="drawer-toggle"
+              aria-label={drawer ? 'Close menu' : 'Open menu'}
+              aria-expanded={drawer}
+              aria-controls="mobile-menu"
+              onClick={() => setDrawer((d) => !d)}
+            >
+              <Icon name={drawer ? 'close' : 'menu'} />
+            </button>
+          </div>
         </div>
-      </div>
-
+      </header>
+      {/* Kept outside <header>: its backdrop-filter would trap this fixed panel in iOS Safari. */}
       <div className={`drawer${drawer ? ' is-open' : ''}`} aria-hidden={!drawer} id="mobile-menu">
         <nav className="drawer-body" aria-label="Mobile">
           {mainNav
@@ -156,6 +154,6 @@ export default function Header() {
           </Link>
         </div>
       </div>
-    </header>
+    </>
   )
 }

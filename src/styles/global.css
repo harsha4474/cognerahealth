@@ -355,7 +355,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .drawer-toggle { display: inline-flex; }
   .header-actions { margin-left: auto; }
   .drawer {
-    display: flex; flex-direction: column; position: fixed; inset: var(--header-h) 0 0; background: #fff;
+    display: flex; flex-direction: column; position: fixed; z-index: 69; top: var(--header-h); left: 0; right: 0;
+    height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); background: #fff;
     opacity: 0; transform: translateY(-8px); visibility: hidden; transition: opacity .2s ease, transform .2s ease, visibility .2s;
   }
   .drawer.is-open { opacity: 1; transform: none; visibility: visible; }
