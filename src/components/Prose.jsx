@@ -7,7 +7,9 @@ export default function Prose({ html, className = '' }) {
     const a = e.target.closest('a')
     if (!a) return
     const href = a.getAttribute('href') || ''
-    if (href.startsWith('/') && !e.metaKey && !e.ctrlKey) {
+    // Let the browser handle files (PDFs) and links meant for a new tab.
+    const isFile = /\.[a-z0-9]+$/i.test(href.split(/[?#]/)[0])
+    if (href.startsWith('/') && !isFile && a.target !== '_blank' && !e.metaKey && !e.ctrlKey) {
       e.preventDefault()
       navigate(href)
     } else if (href.startsWith('#')) {

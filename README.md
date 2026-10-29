@@ -46,4 +46,4 @@ The early-access and privacy request forms don't need a backend. Like the live s
 
 This is a single-page app, so every route must serve `index.html`. `vercel.json` (Vercel) and `public/_redirects` (Netlify) already handle this.
 
-The governance PDFs linked from the Trust Center point to `https://www.cognerahealth.ai/documents/…`. They total about 117 MB, so they are not stored in this repo.
+The four governance PDFs linked from the Trust Center are in `public/documents/`. They have short, clean file names. `vercel.json` redirects the previous site's long file names to them, so old links still work. They were compressed losslessly (117 MB down to 104 MB, pages pixel-identical). Their text is stored as vector outlines, which is why they're large.
