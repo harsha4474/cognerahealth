@@ -87,12 +87,24 @@ export default function Investors() {
         </div>
       </Section>
 
+      <Section tone="soft" className="partners-band">
+        <div className="partners-row">
+          <div>
+            <p className="eyebrow">Partners</p>
+            <p className="section-lead">Built in collaboration with trusted technology ecosystems.</p>
+          </div>
+          <img src="/images/microsoft-for-startups.png" alt="Microsoft for Startups" width="240" height="101" loading="lazy" />
+        </div>
+      </Section>
+
+      <div className="tone-soft">
       <CtaBand
         eyebrow="Our commitment"
         title="Category-defining, closed-loop care technology built to scale worldwide"
         text="Cognera Health™ delivers continuous, integrated, and comprehensive care technology, transforming outcomes while expanding global access and engagement. Ultimately save lives."
         actions={[{ label: 'Request investor deck', to: '/early-access#early-access' }, { label: 'Contact founders', to: '/contact' }]}
       />
+      </div>
     </>
   )
 }

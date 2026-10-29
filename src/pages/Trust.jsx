@@ -88,7 +88,7 @@ export default function Trust() {
             <header className="trust-head">
               {active.eyebrow && <p className="eyebrow">{active.eyebrow}</p>}
               <h2>{active.title || active.label}</h2>
-              {active.intro && <p className="section-lead">{active.intro}</p>}
+              {active.intro?.map((t) => <p key={t} className="section-lead">{t}</p>)}
             </header>
             {active.toc.length > 0 && (
               <details className="toc" open>

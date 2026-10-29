@@ -116,6 +116,7 @@ export default function Standards() {
           title="Clinical, research, wellness, and governance authorities"
           lead="We align with leading authorities and frameworks to ensure evidence-based, ethical, and outcomes-driven care across every layer of our platform."
         />
+        <p className="label-caps">Cognera Health Capabilities</p>
         <CardGrid items={pillars} cols={4} />
       </Section>
 

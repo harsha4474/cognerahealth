@@ -18,7 +18,7 @@ npm run preview  # serve the production build
 | Route | Page |
 | --- | --- |
 | `/` | Home |
-| `/platform`, `/cogneraai`, `/healscript`, `/healconnect`, `/solutions` | Product |
+| `/platform`, `/cogneraai`, `/healscript`, `/healconnect`, `/healscriptos`, `/solutions` | Product (`/healscriptos` is the HealScript™ Operations Center metric explorer) |
 | `/who-we-serve`, `/investors` | Audiences |
 | `/trust`, `/standards` | Trust Center (privacy policy, terms, compliance, governance…) and Standards explorer |
 | `/about`, `/leadership`, `/partnerships`, `/press`, `/careers` | Company |
@@ -33,6 +33,8 @@ Trust sections are deep-linkable, e.g. `/trust#privacy-policy` or `/trust#terms-
 - Long legal copy (Trust Center and the privacy request pages) is in `src/content/legal/*.json`. It is sanitized HTML taken from the live site.
 - The Standards organizations, categories and capabilities are in `src/content/standards-data.json`.
 - Press releases are in `src/content/press.json`.
+- The Operations Center metrics are in `src/content/operations.json`.
+- Per-page titles, descriptions and canonical URLs (copied from the live site) are in `src/content/seo.json`.
 - Navigation and the footer are configured in `src/nav.js`.
 - Images are in `public/images/`. They are the live site's images, resized and converted to WebP.
 

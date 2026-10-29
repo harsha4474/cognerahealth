@@ -270,6 +270,9 @@ export default function HealScript() {
             ]}
           />
           <Checklist items={opsPoints} />
+          <div className="actions">
+            <Button to="/healscriptos" icon="arrowRight">Explore HealScript™ Operations Center</Button>
+          </div>
         </Split>
       </Section>
 

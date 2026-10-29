@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Icon from './Icon'
 
+/** Title for routes without an entry in content/seo.json (e.g. the 404 page). */
 export function usePageTitle(title) {
   useEffect(() => {
-    document.title = title ? `${title} | Cognera Health™` : 'Cognera Health™ — AI-powered continuous care platform'
+    if (title === 'Page not found') document.title = 'Page not found | Cognera Health'
   }, [title])
 }
 

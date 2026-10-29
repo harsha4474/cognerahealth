@@ -1,0 +1,736 @@
+[
+ {
+  "title": "Functional Metrics — Clinical Intelligence",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Clinical Intelligence",
+    "PHQ-9 Tracking",
+    "Measure depression severity longitudinally",
+    "Enables measurement-based care and treatment visibility"
+   ],
+   [
+    "Clinical Intelligence",
+    "GAD-7 Tracking",
+    "Measure anxiety severity over time",
+    "Supports evidence-informed treatment adjustments"
+   ],
+   [
+    "Clinical Intelligence",
+    "OQ-45.2 Outcome Tracking",
+    "Monitor treatment effectiveness and functional outcomes",
+    "Strengthens longitudinal clinical visibility"
+   ],
+   [
+    "Clinical Intelligence",
+    "Treatment Response Tracking",
+    "Assess intervention effectiveness",
+    "Improves outcome-driven decision making"
+   ],
+   [
+    "Clinical Intelligence",
+    "Longitudinal Assessment Trends",
+    "Identify symptom progression and recovery trends",
+    "Enables proactive intervention and continuity of care"
+   ],
+   [
+    "Clinical Intelligence",
+    "Clinical Recommendation Confidence",
+    "Improve trust in AI-assisted recommendations",
+    "Supports clinician augmentation and explainability"
+   ],
+   [
+    "Clinical Intelligence",
+    "Guideline Alignment Metrics",
+    "Ensure APA/NICE/SAMHSA alignment",
+    "Standardizes evidence-informed care delivery"
+   ],
+   [
+    "Clinical Intelligence",
+    "Risk Detection Accuracy",
+    "Identify early deterioration and crisis signals",
+    "Supports preventive intervention and escalation"
+   ],
+   [
+    "Clinical Intelligence",
+    "Care Plan Completion Tracking",
+    "Monitor treatment adherence and progress",
+    "Strengthens coordinated care execution"
+   ],
+   [
+    "Clinical Intelligence",
+    "Referral Follow-through",
+    "Measure care coordination effectiveness",
+    "Improves continuity across providers and systems"
+   ]
+  ]
+ },
+ {
+  "title": "Functional Metrics — Engagement Intelligence",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Engagement Intelligence",
+    "Between-session Engagement Rate",
+    "Increase ongoing participation outside sessions",
+    "Enables continuous care delivery"
+   ],
+   [
+    "Engagement Intelligence",
+    "Daily Check-in Completion",
+    "Improve wellness monitoring adherence",
+    "Strengthens longitudinal behavioral visibility"
+   ],
+   [
+    "Engagement Intelligence",
+    "AI Companion Utilization",
+    "Increase interaction with guided support tools",
+    "Expands support scalability between sessions"
+   ],
+   [
+    "Engagement Intelligence",
+    "Mood Tracking Trends",
+    "Detect emotional and behavioral changes",
+    "Enables earlier intervention"
+   ],
+   [
+    "Engagement Intelligence",
+    "Wellness Journey Adherence",
+    "Improve treatment and wellness consistency",
+    "Supports sustained behavioral improvement"
+   ],
+   [
+    "Engagement Intelligence",
+    "Care Plan Adherence",
+    "Improve follow-through on treatment goals",
+    "Connects engagement to outcomes"
+   ],
+   [
+    "Engagement Intelligence",
+    "Retention & Continuity Metrics",
+    "Reduce disengagement and dropout",
+    "Improves long-term care effectiveness"
+   ],
+   [
+    "Engagement Intelligence",
+    "Personalized Recommendation Engagement",
+    "Increase responsiveness to AI guidance",
+    "Improves adaptive care personalization"
+   ],
+   [
+    "Engagement Intelligence",
+    "Voice Journal Utilization",
+    "Capture qualitative emotional insights",
+    "Enhances contextual longitudinal intelligence"
+   ],
+   [
+    "Engagement Intelligence",
+    "Engagement-to-Outcome Correlation",
+    "Link participation to measurable improvements",
+    "Supports value-based care analytics"
+   ]
+  ]
+ },
+ {
+  "title": "Functional Metrics — Provider Performance",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Provider Performance",
+    "Documentation Time Reduction",
+    "Reduce administrative burden by 40–70%",
+    "Returns time back to direct care delivery"
+   ],
+   [
+    "Provider Performance",
+    "AI Note Generation Adoption",
+    "Increase utilization of AI documentation tools",
+    "Improves workflow automation efficiency"
+   ],
+   [
+    "Provider Performance",
+    "Session Documentation Speed",
+    "Accelerate note completion",
+    "Improves provider productivity"
+   ],
+   [
+    "Provider Performance",
+    "Provider Utilization Metrics",
+    "Optimize provider scheduling and throughput",
+    "Improves operational efficiency"
+   ],
+   [
+    "Provider Performance",
+    "Intake Workflow Efficiency",
+    "Streamline intake and follow-up workflows",
+    "Reduces friction across care delivery"
+   ],
+   [
+    "Provider Performance",
+    "Telehealth Workflow Efficiency",
+    "Improve virtual care coordination",
+    "Supports scalable remote care"
+   ],
+   [
+    "Provider Performance",
+    "Session Summarization Speed",
+    "Accelerate post-session documentation",
+    "Enables real-time care visibility"
+   ],
+   [
+    "Provider Performance",
+    "Clinical Workflow Automation",
+    "Reduce repetitive administrative tasks",
+    "Improves workforce scalability"
+   ],
+   [
+    "Provider Performance",
+    "Burnout Reduction Indicators",
+    "Lower cognitive and administrative strain",
+    "Supports workforce retention and sustainability"
+   ],
+   [
+    "Provider Performance",
+    "Multi-provider Coordination Efficiency",
+    "Improve care team collaboration",
+    "Strengthens connected care delivery"
+   ]
+  ]
+ },
+ {
+  "title": "Operational Metrics — Clinical & Operational Intelligence",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Operational Intelligence",
+    "Real-time Operational Visibility",
+    "Provide live care delivery intelligence",
+    "Improves organizational responsiveness"
+   ],
+   [
+    "Operational Intelligence",
+    "Workflow Orchestration Efficiency",
+    "Coordinate workflows across teams",
+    "Enables continuous operations management"
+   ],
+   [
+    "Operational Intelligence",
+    "Scheduling Optimization",
+    "Improve resource and provider allocation",
+    "Increases operational throughput"
+   ],
+   [
+    "Operational Intelligence",
+    "Multi-site Visibility",
+    "Monitor enterprise-wide performance",
+    "Supports health system scalability"
+   ],
+   [
+    "Operational Intelligence",
+    "Care Delivery Visibility",
+    "Identify delays and gaps in care",
+    "Enables proactive intervention"
+   ],
+   [
+    "Operational Intelligence",
+    "Capacity Utilization",
+    "Optimize provider and operational capacity",
+    "Improves efficiency and financial sustainability"
+   ],
+   [
+    "Operational Intelligence",
+    "Cross-team Collaboration Metrics",
+    "Improve coordination across care teams",
+    "Strengthens integrated care delivery"
+   ],
+   [
+    "Operational Intelligence",
+    "Escalation Response Times",
+    "Accelerate intervention responsiveness",
+    "Reduces operational and clinical risk"
+   ],
+   [
+    "Operational Intelligence",
+    "Population Outcome Analytics",
+    "Track trends across cohorts and programs",
+    "Enables enterprise intelligence"
+   ],
+   [
+    "Operational Intelligence",
+    "Access-to-care Metrics",
+    "Expand access and reduce barriers",
+    "Supports population health strategies"
+   ]
+  ]
+ },
+ {
+  "title": "Financial Metrics",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Financial Intelligence",
+    "ROI Through Automation",
+    "Achieve 3–4× ROI potential",
+    "Demonstrates enterprise value creation"
+   ],
+   [
+    "Financial Intelligence",
+    "Operational Cost Reduction",
+    "Lower administrative and workflow costs",
+    "Improves organizational margins"
+   ],
+   [
+    "Financial Intelligence",
+    "Documentation Labor Reduction",
+    "Reduce documentation overhead",
+    "Improves provider efficiency economics"
+   ],
+   [
+    "Financial Intelligence",
+    "Revenue Optimization",
+    "Increase throughput and operational performance",
+    "Supports scalable growth"
+   ],
+   [
+    "Financial Intelligence",
+    "Workforce Efficiency Gains",
+    "Improve staff productivity utilization",
+    "Enables scaling without proportional staffing increases"
+   ],
+   [
+    "Financial Intelligence",
+    "Deployment Acceleration",
+    "Reduce implementation timelines by 30–50%",
+    "Accelerates enterprise adoption"
+   ],
+   [
+    "Financial Intelligence",
+    "Workflow Automation Savings",
+    "Reduce repetitive operational costs",
+    "Improves operational sustainability"
+   ],
+   [
+    "Financial Intelligence",
+    "Cost-per-Care Indicators",
+    "Improve care delivery economics",
+    "Supports value-based reimbursement models"
+   ]
+  ]
+ },
+ {
+  "title": "Technical Metrics — AI / ML / NLP / NLU",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "AI Intelligence",
+    "Predictive Clinical Insight Accuracy",
+    "Achieve ~90%+ predictive accuracy",
+    "Supports proactive and preventive care"
+   ],
+   [
+    "AI Intelligence",
+    "Early Risk Prediction Accuracy",
+    "Improve crisis detection capability",
+    "Enables earlier intervention"
+   ],
+   [
+    "AI Intelligence",
+    "Recommendation Precision",
+    "Improve relevance of AI-generated guidance",
+    "Enhances clinician trust and usability"
+   ],
+   [
+    "AI Intelligence",
+    "AI-generated Summary Quality",
+    "Improve documentation quality and clarity",
+    "Reduces manual summarization burden"
+   ],
+   [
+    "AI Intelligence",
+    "Longitudinal Predictive Analytics",
+    "Detect long-term behavioral patterns",
+    "Supports continuous care intelligence"
+   ],
+   [
+    "NLP Intelligence",
+    "Real-time Transcription Accuracy",
+    "Improve speech-to-text reliability",
+    "Supports live documentation workflows"
+   ],
+   [
+    "NLP Intelligence",
+    "SOAP/BIRP/DAP Generation Quality",
+    "Standardize structured documentation",
+    "Improves clinical consistency"
+   ],
+   [
+    "NLP Intelligence",
+    "Clinical Language Extraction Accuracy",
+    "Capture meaningful clinical insights",
+    "Enhances structured data quality"
+   ],
+   [
+    "NLP Intelligence",
+    "Semantic Understanding Accuracy",
+    "Improve contextual comprehension",
+    "Strengthens summarization and recommendations"
+   ],
+   [
+    "NLU Intelligence",
+    "Clinical Intent Recognition",
+    "Understand provider and individual intent",
+    "Supports intelligent workflow automation"
+   ],
+   [
+    "NLU Intelligence",
+    "Emotional Sentiment Interpretation",
+    "Detect behavioral and emotional signals",
+    "Enhances engagement intelligence"
+   ],
+   [
+    "Machine Learning",
+    "Recommendation Engine Effectiveness",
+    "Improve personalization quality",
+    "Supports adaptive care pathways"
+   ],
+   [
+    "Machine Learning",
+    "Longitudinal Trend Detection",
+    "Detect behavioral and clinical shifts",
+    "Enables predictive intervention"
+   ],
+   [
+    "Responsible AI",
+    "Human-in-the-loop Validation",
+    "Ensure clinician oversight",
+    "Maintains clinical authority and governance"
+   ],
+   [
+    "Responsible AI",
+    "Explainability Metrics",
+    "Improve transparency of recommendations",
+    "Supports enterprise trust and compliance"
+   ],
+   [
+    "Responsible AI",
+    "Bias Monitoring Indicators",
+    "Detect and mitigate bias",
+    "Supports equitable care delivery"
+   ]
+  ]
+ },
+ {
+  "title": "Data & Analytics Metrics",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Data & Analytics",
+    "Real-time Clinical Analytics",
+    "Deliver live clinical visibility",
+    "Enables immediate intervention"
+   ],
+   [
+    "Data & Analytics",
+    "Real-time Operational Analytics",
+    "Monitor workflows and utilization continuously",
+    "Improves operational agility"
+   ],
+   [
+    "Data & Analytics",
+    "Longitudinal Trend Analysis",
+    "Track historical progression and outcomes",
+    "Supports continuous care intelligence"
+   ],
+   [
+    "Data & Analytics",
+    "Cross-touchpoint Analytics",
+    "Unify engagement and operational data",
+    "Enables connected intelligence"
+   ],
+   [
+    "Data & Analytics",
+    "Executive KPI Visibility",
+    "Provide organization-wide performance dashboards",
+    "Supports enterprise decision making"
+   ],
+   [
+    "Data & Analytics",
+    "Outcome Trajectory Analytics",
+    "Predict treatment progression trends",
+    "Enables outcome-informed planning"
+   ],
+   [
+    "Data & Analytics",
+    "Streaming Engagement Analytics",
+    "Monitor live engagement behaviors",
+    "Supports adaptive interventions"
+   ],
+   [
+    "Data & Analytics",
+    "Organizational Reporting Metrics",
+    "Deliver enterprise reporting visibility",
+    "Strengthens operational governance"
+   ]
+  ]
+ },
+ {
+  "title": "Interoperability & Infrastructure Metrics",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Interoperability",
+    "FHIR/HL7 Deployment Acceleration",
+    "Achieve 30–50% faster deployment",
+    "Accelerates implementation and integration"
+   ],
+   [
+    "Interoperability",
+    "EHR Interoperability Readiness",
+    "Enable connected data exchange",
+    "Reduces fragmentation across systems"
+   ],
+   [
+    "Interoperability",
+    "API Integration Utilization",
+    "Expand ecosystem connectivity",
+    "Supports unified workflows"
+   ],
+   [
+    "Interoperability",
+    "Connected Workflow Completion",
+    "Improve end-to-end workflow continuity",
+    "Enables continuous care operations"
+   ],
+   [
+    "Infrastructure",
+    "HIPAA Compliance Indicators",
+    "Maintain regulatory compliance",
+    "Supports enterprise trust"
+   ],
+   [
+    "Infrastructure",
+    "SOC 2 Readiness",
+    "Ensure enterprise-grade security posture",
+    "Strengthens organizational adoption"
+   ],
+   [
+    "Infrastructure",
+    "Platform Uptime Indicators",
+    "Maintain system reliability",
+    "Supports mission-critical care delivery"
+   ],
+   [
+    "Infrastructure",
+    "Real-time Synchronization Performance",
+    "Ensure timely data exchange",
+    "Enables live operational intelligence"
+   ],
+   [
+    "Infrastructure",
+    "Telehealth Session Stability",
+    "Improve virtual care quality",
+    "Supports scalable digital care"
+   ],
+   [
+    "Infrastructure",
+    "Multi-device Engagement Metrics",
+    "Support seamless cross-platform access",
+    "Improves user accessibility"
+   ]
+  ]
+ },
+ {
+  "title": "Enterprise Metrics",
+  "headers": [
+   "Section",
+   "Metric",
+   "Target / Outcome",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "Enterprise Intelligence",
+    "Enterprise Deployment Readiness",
+    "Accelerate organizational onboarding",
+    "Supports scaling across health systems"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Multi-provider Adoption Rates",
+    "Increase provider utilization across organizations",
+    "Expands enterprise platform adoption"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Organizational Scalability Indicators",
+    "Measure scaling efficiency",
+    "Supports large-scale deployment"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Access-to-care Expansion",
+    "Increase service accessibility",
+    "Improves population reach"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Continuous Care Adoption",
+    "Shift from episodic to continuous care",
+    "Enables category transformation"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Preventive Care Effectiveness",
+    "Improve early intervention outcomes",
+    "Supports long-term health improvement"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Connected Ecosystem Adoption",
+    "Expand coordinated platform utilization",
+    "Strengthens unified care delivery"
+   ],
+   [
+    "Enterprise Intelligence",
+    "Lives Impacted",
+    "Measure broad care impact",
+    "Demonstrates mission and societal value"
+   ]
+  ]
+ },
+ {
+  "title": "AI Utilization in Clinical & Operational Intelligence for Continuous Care Delivery",
+  "headers": [
+   "AI Utilization Area",
+   "AI Capability",
+   "Operational / Clinical Purpose",
+   "Strategic Value"
+  ],
+  "rows": [
+   [
+    "AI Documentation",
+    "AI-assisted note generation",
+    "Automates clinical documentation workflows",
+    "Reduces administrative burden"
+   ],
+   [
+    "SOAP/BIRP/DAP Generation",
+    "Structured clinical note generation",
+    "Produces standardized documentation formats",
+    "Improves documentation consistency"
+   ],
+   [
+    "Session Summarization",
+    "NLP-powered summarization",
+    "Generates concise clinical summaries",
+    "Accelerates post-session workflows"
+   ],
+   [
+    "Real-time Transcription",
+    "Speech-to-text intelligence",
+    "Captures live session conversations",
+    "Enables real-time documentation"
+   ],
+   [
+    "Treatment Planning",
+    "AI-assisted treatment recommendations",
+    "Supports evidence-informed planning",
+    "Augments clinical decision-making"
+   ],
+   [
+    "Risk Detection",
+    "Predictive behavioral analysis",
+    "Identifies early crisis indicators",
+    "Enables proactive intervention"
+   ],
+   [
+    "Clinical Decision Support",
+    "Guideline-aligned recommendations",
+    "Surfaces contextual insights",
+    "Supports evidence-based care"
+   ],
+   [
+    "Longitudinal Intelligence",
+    "Continuous trend analysis",
+    "Tracks progress across time",
+    "Enables continuous care visibility"
+   ],
+   [
+    "Engagement Intelligence",
+    "Personalized adaptive recommendations",
+    "Improves between-session engagement",
+    "Strengthens adherence and continuity"
+   ],
+   [
+    "Operational Intelligence",
+    "Workflow orchestration analytics",
+    "Optimizes operational coordination",
+    "Improves enterprise efficiency"
+   ],
+   [
+    "Population Intelligence",
+    "Cohort and utilization analytics",
+    "Monitors organization-wide trends",
+    "Supports executive decision making"
+   ],
+   [
+    "Care Coordination",
+    "Connected workflow intelligence",
+    "Unifies care team collaboration",
+    "Improves continuity of care"
+   ],
+   [
+    "Predictive Analytics",
+    "Behavioral and clinical forecasting",
+    "Detects deterioration and risk trends",
+    "Enables preventive care strategies"
+   ],
+   [
+    "Responsible AI Oversight",
+    "Human-in-the-loop validation",
+    "Maintains clinician authority",
+    "Supports governance and trust"
+   ]
+  ]
+ }
+]
