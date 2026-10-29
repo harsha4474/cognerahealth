@@ -303,7 +303,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .prose .kicker { margin: 40px 0 6px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--violet-600); }
 .prose .kicker + h2 { margin-top: 0; }
 .prose .callout { padding: 16px 18px; border-radius: 12px; background: var(--violet-50); border-left: 3px solid var(--violet); color: var(--ink-2); }
-.prose table { width: 100%; border-collapse: collapse; margin: 8px 0 24px; font-size: 0.9rem; display: block; overflow-x: auto; }
+.prose .table-scroll { overflow-x: auto; margin: 8px 0 24px; }
+.prose table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .prose th, .prose td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
 .prose th { background: var(--soft); color: var(--ink); }
 
@@ -472,6 +473,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .wide-figure { margin-top: 48px; }
 .numbered .card-num { font-size: 1.4rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .statement .section-header h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+/* .statement p sets muted grey; keep text readable on dark bands (WCAG AA contrast) */
+.tone-ink .statement p { color: #c9cbe0; }
+.tone-ink .statement .eyebrow-light { color: #c4b5fd; }
 .product-card { padding: 0 0 28px; overflow: hidden; }
 .product-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: var(--soft); }
 .product-card h3, .product-card p, .product-card .btn { margin-left: 28px; margin-right: 28px; }
