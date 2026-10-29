@@ -1,3 +1,30 @@
 {
-  "rewrites": [{ "source": "/((?!images/|assets/|favicon|robots.txt|sitemap.xml|og-image.jpg|twitter-image.jpg).*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!images/|assets/|documents/|favicon|robots.txt|sitemap.xml|og-image.jpg|twitter-image.jpg).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/documents/(.*)Privacy(.*)Program(.*)Protected\\.pdf",
+      "destination": "/documents/cognera-health-privacy-policy-data-protection-program.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/documents/(.*)Platform(.*)Governance(.*)Protected\\.pdf",
+      "destination": "/documents/cognera-health-platform-governance-terms-responsible-ai-framework.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/documents/(.*)Compliance(.*)Governance(.*)Protected\\.pdf",
+      "destination": "/documents/cognera-health-compliance-governance-framework.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/documents/(.*)Data(.*)Retention(.*)Protected\\.pdf",
+      "destination": "/documents/cognera-health-data-retention-deletion-secure-disposal-policy.pdf",
+      "permanent": true
+    }
+  ]
 }
