@@ -36,6 +36,7 @@ function Dropdown({ item, open, onOpen, onClose }) {
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null)
   const [drawer, setDrawer] = useState(false)
+  const [openGroup, setOpenGroup] = useState(null)
   const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
   const navRef = useRef(null)
@@ -50,6 +51,7 @@ export default function Header() {
   useEffect(() => {
     setDrawer(false)
     setOpenMenu(null)
+    setOpenGroup(mainNav.find((item) => item.children?.some((c) => c.to === pathname))?.label ?? null)
   }, [pathname])
 
   useEffect(() => {
@@ -68,7 +70,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
+    <header className={`site-header${scrolled ? ' is-scrolled' : ''}${drawer ? ' menu-open' : ''}`}>
       <div className="container header-bar">
         <Logo />
         <nav className="desktop-nav" aria-label="Main" ref={navRef}>
@@ -98,6 +100,7 @@ export default function Header() {
             className="drawer-toggle"
             aria-label={drawer ? 'Close menu' : 'Open menu'}
             aria-expanded={drawer}
+            aria-controls="mobile-menu"
             onClick={() => setDrawer((d) => !d)}
           >
             <Icon name={drawer ? 'close' : 'menu'} />
@@ -105,31 +108,53 @@ export default function Header() {
         </div>
       </div>
 
-      <div className={`drawer${drawer ? ' is-open' : ''}`} aria-hidden={!drawer}>
-        <nav aria-label="Mobile">
-          {mainNav.map((item) =>
-            item.children ? (
-              <details key={item.label} className="drawer-group">
-                <summary>
+      <div className={`drawer${drawer ? ' is-open' : ''}`} aria-hidden={!drawer} id="mobile-menu">
+        <nav className="drawer-body" aria-label="Mobile">
+          {mainNav
+            .filter((item) => item.to !== '/contact')
+            .map((item) =>
+              item.children ? (
+                <div key={item.label} className={`drawer-group${openGroup === item.label ? ' is-open' : ''}`}>
+                  <button
+                    className="drawer-row"
+                    aria-expanded={openGroup === item.label}
+                    onClick={() => setOpenGroup(openGroup === item.label ? null : item.label)}
+                  >
+                    {item.label}
+                    <Icon name="chevronDown" size={20} />
+                  </button>
+                  <div className="drawer-panel">
+                    <div className="drawer-panel-inner">
+                      {item.children.map((c) => (
+                        <Link
+                          key={c.to}
+                          to={c.to}
+                          className={`drawer-sublink${pathname === c.to ? ' is-active' : ''}`}
+                          tabIndex={openGroup === item.label ? 0 : -1}
+                        >
+                          <strong>{c.label}</strong>
+                          <span>{c.desc}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link key={item.to} to={item.to} className={`drawer-row${pathname === item.to ? ' is-active' : ''}`}>
                   {item.label}
-                  <Icon name="chevronDown" size={18} />
-                </summary>
-                {item.children.map((c) => (
-                  <Link key={c.to} to={c.to} className="drawer-sublink">
-                    {c.label}
-                  </Link>
-                ))}
-              </details>
-            ) : (
-              <Link key={item.to} to={item.to} className="drawer-link">
-                {item.label}
-              </Link>
-            ),
-          )}
-          <Link to="/early-access" className="btn btn-primary drawer-cta">
+                  <Icon name="arrowRight" size={18} />
+                </Link>
+              ),
+            )}
+        </nav>
+        <div className="drawer-footer">
+          <Link to="/early-access" className="btn btn-primary">
             Get early access
           </Link>
-        </nav>
+          <Link to="/contact" className="btn btn-secondary">
+            Contact
+          </Link>
+        </div>
       </div>
     </header>
   )
