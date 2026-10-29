@@ -17,6 +17,7 @@ const pages = {
     relationships: ['Individual user', 'Patient or care recipient', 'Authorized representative', 'Customer administrator', 'Healthcare provider', 'Other'],
     categories: ['Account deletion', 'Data deletion', 'App store data safety request', 'Correction or restriction request', 'Other privacy request'],
     placeholder: 'Describe the account, product, app, or information related to this request.',
+    footnote: 'Requests may be subject to identity verification, legal retention obligations, contractual requirements, and healthcare record retention rules.',
   },
   dns: {
     data: dns,
@@ -29,6 +30,7 @@ const pages = {
     relationships: ['Individual consumer', 'Patient or care recipient', 'Authorized agent', 'Customer administrator', 'Healthcare provider', 'Other'],
     categories: ['Do not sell my personal information', 'Do not share my personal information', 'Limit use or disclosure of sensitive personal information', 'Consumer health data privacy request', 'Other privacy choice'],
     placeholder: 'Describe your opt-out request, applicable state, account, product, or privacy choice.',
+    footnote: 'Opt-out rights vary by jurisdiction and may be subject to identity verification, legal exceptions, and applicable customer or healthcare obligations.',
   },
 }
 
@@ -89,7 +91,7 @@ function RequestForm({ cfg }) {
         </div>
       </div>
       <div className="form-footer">
-        <small>Requests may be subject to identity verification, legal retention obligations, contractual requirements, and healthcare record retention rules.</small>
+        <small>{cfg.footnote}</small>
         <button type="submit" className="btn btn-primary">Open Email Request <Icon name="mail" size={18} /></button>
       </div>
       {opened && <p className="form-success" role="status">Your email client should open with a prefilled request. Please review and send it.</p>}
