@@ -1,0 +1,979 @@
+{
+ "orgs": {
+  "apa": {
+   "name": "American Psychiatric Association",
+   "abbr": "APA",
+   "url": "https://www.psychiatry.org",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Clinical",
+   "why": "Defines the global diagnostic standard for mental illness",
+   "mission": "Advance psychiatry and improve mental health care quality and access worldwide.",
+   "impact": "Created DSM-5-TR — the primary diagnostic reference used by every licensed clinician globally.",
+   "features": [
+    "DSM-5-TR",
+    "Clinical guidelines",
+    "Psychiatric research",
+    "Continuing medical education",
+    "Policy advocacy"
+   ],
+   "healscript": [
+    "DSM-5 aligned diagnosis",
+    "Evidence-based treatment pathways",
+    "Clinical decision support"
+   ],
+   "healconnect": []
+  },
+  "nice": {
+   "name": "National Institute for Health & Care Excellence",
+   "abbr": "NICE",
+   "url": "https://www.nice.org.uk",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Clinical",
+   "why": "Gold standard for evidence-based treatment pathways globally",
+   "mission": "Improve health and social care through evidence-based guidance.",
+   "impact": "Shapes treatment protocols, cost-effective care models, and quality benchmarks adopted worldwide.",
+   "features": [
+    "Clinical guidelines",
+    "Care pathways",
+    "Cost-effectiveness models",
+    "Quality standards",
+    "Technology appraisals"
+   ],
+   "healscript": [
+    "NICE-aligned care pathways",
+    "Measurement-based care",
+    "Outcome optimization signals"
+   ],
+   "healconnect": []
+  },
+  "samhsa": {
+   "name": "Substance Abuse and Mental Health Services Administration",
+   "abbr": "SAMHSA",
+   "url": "https://www.samhsa.gov",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Clinical",
+   "why": "U.S. behavioral health system backbone",
+   "mission": "Improve access, quality, and outcomes for behavioral health services nationwide.",
+   "impact": "Operates 988 Crisis Lifeline, national treatment locator, and federal prevention frameworks.",
+   "features": [
+    "988 Crisis Lifeline",
+    "Treatment locator",
+    "Grants & programs",
+    "Prevention frameworks",
+    "Recovery support services"
+   ],
+   "healscript": [
+    "Crisis escalation protocols",
+    "Risk stratification models"
+   ],
+   "healconnect": [
+    "24/7 engagement tools",
+    "Safety planning support"
+   ]
+  },
+  "nimh": {
+   "name": "National Institute of Mental Health",
+   "abbr": "NIMH",
+   "url": "https://www.nimh.nih.gov",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Research",
+     "p-re"
+    ]
+   ],
+   "layer": "Research",
+   "why": "Core mental health research authority",
+   "mission": "Transform understanding and treatment of mental illness through research.",
+   "impact": "Drives innovation in neuroscience, diagnosis methodology, and new treatment modalities.",
+   "features": [
+    "Clinical trials",
+    "Brain research",
+    "Epidemiological data",
+    "Research funding",
+    "Grant programs"
+   ],
+   "healscript": [
+    "Longitudinal outcome tracking",
+    "Evidence-backed treatment adjustment"
+   ],
+   "healconnect": [
+    "Automated assessment scoring"
+   ]
+  },
+  "nih": {
+   "name": "National Institutes of Health",
+   "abbr": "NIH",
+   "url": "https://www.nih.gov",
+   "cats": [
+    [
+     "Research",
+     "p-re"
+    ]
+   ],
+   "layer": "Research",
+   "why": "Largest biomedical research engine globally",
+   "mission": "Turn scientific discovery into better health for all people.",
+   "impact": "Foundational science underpinning all modern healthcare — clinical trials to translational research.",
+   "features": [
+    "Research funding",
+    "Data systems",
+    "Translational science",
+    "Clinical trials infrastructure",
+    "Public health resources"
+   ],
+   "healscript": [
+    "Population-level analytics",
+    "Recovery trajectory models"
+   ],
+   "healconnect": []
+  },
+  "cdc": {
+   "name": "Centers for Disease Control and Prevention – Mental & Behavioral Health",
+   "abbr": "CDC",
+   "url": "https://www.cdc.gov",
+   "cats": [
+    [
+     "Behavioral health",
+     "p-bh"
+    ],
+    [
+     "Research",
+     "p-re"
+    ]
+   ],
+   "layer": "Research",
+   "why": "Population-level mental health surveillance and prevention",
+   "mission": "Protect public health and safety through prevention, preparedness, and promotion.",
+   "impact": "Defines national mental health trends, suicide prevention programs, and behavioral risk data.",
+   "features": [
+    "Epidemiological data",
+    "Suicide prevention",
+    "Behavioral risk monitoring",
+    "Public health campaigns",
+    "Health surveillance"
+   ],
+   "healscript": [
+    "Cohort-level benchmarking",
+    "Population health dashboards"
+   ],
+   "healconnect": [
+    "Risk stratification nudges"
+   ]
+  },
+  "gwi": {
+   "name": "Global Wellness Institute",
+   "abbr": "GWI",
+   "url": "https://globalwellnessinstitute.org",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ],
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Well-being",
+   "why": "Defines wellness as prevention — not treatment",
+   "mission": "Empower wellness worldwide through research, education, and collaboration.",
+   "impact": "Frames a multi-trillion-dollar wellness economy and positions prevention as primary healthcare strategy.",
+   "features": [
+    "Global wellness economy reports",
+    "Preventive health models",
+    "Industry benchmarks",
+    "Policy influence",
+    "Global reports"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Wellness journey personalization",
+    "Preventive insight nudges",
+    "Lifestyle-driven care plans"
+   ]
+  },
+  "nwi": {
+   "name": "National Wellness Institute",
+   "abbr": "NWI",
+   "url": "https://nationalwellness.org",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ],
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Well-being",
+   "why": "Standardized the most widely adopted holistic well-being model",
+   "mission": "Promote whole-person wellness across individual, organizational, and community levels.",
+   "impact": "Operationalizes well-being via the Six Dimensions of Wellness framework used globally.",
+   "features": [
+    "Six dimensions framework",
+    "Certifications & training",
+    "Workplace programs",
+    "Educational resources",
+    "Research & development"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Multidimensional wellness tracking",
+    "Emotional & physical habit loops",
+    "Organizational wellness analytics"
+   ]
+  },
+  "iwbi": {
+   "name": "International WELL Building Institute",
+   "abbr": "IWBI",
+   "url": "https://www.wellcertified.com",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ],
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Well-being",
+   "why": "Connects physical environment to mental and physical health outcomes",
+   "mission": "Improve health and well-being through better building design and environments.",
+   "impact": "Drives well-being design standards in workplaces, healthcare facilities, and housing.",
+   "features": [
+    "WELL certification",
+    "Environmental health metrics",
+    "Workplace design guidelines",
+    "Research & policy",
+    "Certification programs"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Context-aware recommendations",
+    "Environment & routine signals",
+    "Workplace stress sensors"
+   ]
+  },
+  "oxford": {
+   "name": "Wellbeing Research Centre — University of Oxford",
+   "abbr": "Oxford WRC",
+   "url": "https://wellbeing.hmc.ox.ac.uk",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Research",
+     "p-re"
+    ]
+   ],
+   "layer": "Well-being",
+   "why": "Global leader in scientifically measuring well-being",
+   "mission": "Advance understanding and measurement of well-being to inform policy and practice.",
+   "impact": "Influences global happiness metrics and national policy decisions worldwide.",
+   "features": [
+    "Well-being measurement models",
+    "Global data & reports",
+    "Policy research",
+    "Behavioral insights",
+    "Economic well-being analysis"
+   ],
+   "healscript": [
+    "Validated well-being measures",
+    "Outcome benchmarking"
+   ],
+   "healconnect": [
+    "Longitudinal well-being scoring",
+    "Behavioral trend analytics"
+   ]
+  },
+  "ggsc": {
+   "name": "Greater Good Science Center",
+   "abbr": "GGSC",
+   "url": "https://greatergood.berkeley.edu",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Mental health",
+     "p-mh"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Converts research into real-world well-being practices",
+   "mission": "Study the psychology, sociology, and neuroscience of well-being and teach practical skills.",
+   "impact": "Scales evidence-based emotional well-being tools for individuals and organizations.",
+   "features": [
+    "Happiness & resilience research",
+    "Gratitude & mindfulness tools",
+    "Education programs",
+    "Public resources",
+    "Practical training"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Gratitude journaling",
+    "Resilience-building nudges",
+    "Adaptive engagement based on behavior signals"
+   ]
+  },
+  "ppc": {
+   "name": "Positive Psychology Center — UPenn",
+   "abbr": "PPC",
+   "url": "https://ppc.sas.upenn.edu",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Mental health",
+     "p-mh"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Academic origin of modern well-being science",
+   "mission": "Advance research on strengths, resilience, and optimal human functioning.",
+   "impact": "Shapes modern well-being frameworks used in healthcare, coaching, and digital health.",
+   "features": [
+    "Flourishing & strengths research",
+    "Behavioral interventions",
+    "Academic programs",
+    "Evidence frameworks",
+    "Flourishing models"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Strength-based interventions",
+    "Habit formation frameworks",
+    "Emotional pattern insights"
+   ]
+  },
+  "afh": {
+   "name": "Action for Happiness",
+   "abbr": "AfH",
+   "url": "https://www.actionforhappiness.org",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Scales community well-being globally through accessible programs",
+   "mission": "Help people create a happier and more caring society.",
+   "impact": "Democratizes well-being via structured, evidence-based courses and programs worldwide.",
+   "features": [
+    "Happiness courses",
+    "Community programs",
+    "Behavioral nudges",
+    "Global campaigns",
+    "Well-being resources"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Psychoeducation modules",
+    "Community engagement features",
+    "Behavioral reinforcement tools"
+   ]
+  },
+  "nccih": {
+   "name": "National Center for Complementary and Integrative Health",
+   "abbr": "NCCIH",
+   "url": "https://www.nccih.nih.gov",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ],
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Provides scientific validation of mind-body and integrative care",
+   "mission": "Define the usefulness and safety of complementary health approaches through rigorous research.",
+   "impact": "Bridges traditional and modern medicine — brings evidence rigor to meditation, yoga, and integrative therapies.",
+   "features": [
+    "Clinical research",
+    "Mind-body studies",
+    "Evidence reviews",
+    "Whole-person health models",
+    "Clinical trials"
+   ],
+   "healscript": [
+    "Integrative care pathways"
+   ],
+   "healconnect": [
+    "Mind-body interventions (journaling, breathing)",
+    "Lifestyle fusion with clinical data"
+   ]
+  },
+  "acimh": {
+   "name": "Academic Consortium for Integrative Medicine & Health",
+   "abbr": "ACIMH",
+   "url": "https://www.imconsortium.org",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Integrates whole-person care into mainstream hospital systems",
+   "mission": "Advance integrative medicine through education, research, and advocacy.",
+   "impact": "Accelerates adoption of holistic care models across leading health systems.",
+   "features": [
+    "Clinical integration frameworks",
+    "Academic collaboration",
+    "Training programs",
+    "Policy advocacy",
+    "Academic partnerships"
+   ],
+   "healscript": [
+    "Multi-provider care coordination",
+    "Unified care plan architecture"
+   ],
+   "healconnect": [
+    "SDoH integration",
+    "Referral & coordination workflows"
+   ]
+  },
+  "ifm": {
+   "name": "Institute for Functional Medicine",
+   "abbr": "IFM",
+   "url": "https://www.ifm.org",
+   "cats": [
+    [
+     "Wellness",
+     "p-wl"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Behavioral health",
+   "why": "Root-cause, systems biology approach to personalized health",
+   "mission": "Transform healthcare by addressing underlying causes of disease.",
+   "impact": "Enables longitudinal, personalized wellness care and chronic disease prevention.",
+   "features": [
+    "Functional medicine framework",
+    "Practitioner education",
+    "Systems biology models",
+    "Personalized protocols",
+    "Chronic disease prevention"
+   ],
+   "healscript": [
+    "Root-cause clinical mapping",
+    "Personalized care protocols"
+   ],
+   "healconnect": [
+    "Lifestyle + clinical data fusion",
+    "Chronic care prevention pathways"
+   ]
+  },
+  "gallup": {
+   "name": "Gallup",
+   "abbr": "Gallup",
+   "url": "https://www.gallup.com/workplace/well-being",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Defines measurable well-being and engagement at organizational scale",
+   "mission": "Provide analytics and insights to improve workplace and life outcomes globally.",
+   "impact": "Establishes well-being as a business KPI — productivity, burnout, and engagement as measurable outcomes.",
+   "features": [
+    "Wellbeing Index",
+    "Employee engagement models",
+    "Population analytics",
+    "Benchmarking tools",
+    "Workplace insights"
+   ],
+   "healscript": [
+    "Enterprise performance tracking"
+   ],
+   "healconnect": [
+    "Workplace stress & burnout signals",
+    "Engagement & productivity insights",
+    "Organizational analytics"
+   ]
+  },
+  "wef": {
+   "name": "World Economic Forum",
+   "abbr": "WEF",
+   "url": "https://www.weforum.org/topics/mental-health",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Mental health",
+     "p-mh"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Elevates well-being to a global economic and policy priority",
+   "mission": "Improve the state of the world through public-private cooperation.",
+   "impact": "Positions mental health and well-being as core to economic resilience and workforce productivity.",
+   "features": [
+    "Global health initiatives",
+    "Workplace mental health programs",
+    "Policy frameworks",
+    "Cross-sector collaboration",
+    "Public-private partnerships"
+   ],
+   "healscript": [
+    "Value-based care reporting",
+    "ROI + cost-outcome models"
+   ],
+   "healconnect": [
+    "Population-level well-being programs"
+   ]
+  },
+  "shrm": {
+   "name": "Society for Human Resource Management",
+   "abbr": "SHRM",
+   "url": "https://www.shrm.org",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ],
+    [
+     "Wellness",
+     "p-wl"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Operationalizes employee well-being in corporate strategy",
+   "mission": "Empower HR professionals to build better workplaces and workforce outcomes.",
+   "impact": "Drives corporate adoption of well-being programs, mental health initiatives, and people analytics.",
+   "features": [
+    "Workplace well-being standards",
+    "HR policy guidance",
+    "Research & reports",
+    "Certifications",
+    "Workforce analytics"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Enterprise well-being dashboards",
+    "Manager-facing engagement tools"
+   ]
+  },
+  "oecd": {
+   "name": "Organisation for Economic Co-operation and Development",
+   "abbr": "OECD",
+   "url": "https://www.oecd.org/en/topics/well-being.html",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Measures and defines well-being beyond GDP at national level",
+   "mission": "Promote policies that improve economic and social well-being globally.",
+   "impact": "Established the Better Life Index — the primary national well-being benchmark used by governments.",
+   "features": [
+    "Better Life Index",
+    "Policy frameworks",
+    "Global data benchmarks",
+    "Economic + social metrics",
+    "Social policy analysis"
+   ],
+   "healscript": [
+    "Outcome reporting for value-based care",
+    "System ROI benchmarking"
+   ],
+   "healconnect": []
+  },
+  "undp": {
+   "name": "United Nations Development Programme",
+   "abbr": "UNDP",
+   "url": "https://www.undp.org",
+   "cats": [
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Expands well-being into human development, equity, and sustainability",
+   "mission": "Advance sustainable development and improve quality of life globally.",
+   "impact": "Introduced the Human Development Index (HDI) — a foundational global well-being metric.",
+   "features": [
+    "Human Development Reports",
+    "Sustainability programs",
+    "Global policy work",
+    "Equity & inclusion focus",
+    "Development metrics"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "SDoH tracking",
+    "Equity-driven care access models"
+   ]
+  },
+  "nami": {
+   "name": "National Alliance on Mental Illness",
+   "abbr": "NAMI",
+   "url": "https://www.nami.org",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Behavioral health",
+     "p-bh"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Connects clinical systems to real people — advocacy at scale",
+   "mission": "Provide advocacy, education, and support for individuals and families affected by mental illness.",
+   "impact": "Expands access to care and reduces stigma through peer support, helplines, and education.",
+   "features": [
+    "Support groups",
+    "Education programs",
+    "Advocacy",
+    "Crisis resources",
+    "Community outreach"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "Peer support features",
+    "Stigma-reduction content",
+    "Community resources hub"
+   ]
+  },
+  "hr": {
+   "name": "HealthRight International",
+   "abbr": "HealthRight",
+   "url": "https://healthright.org",
+   "cats": [
+    [
+     "Mental health",
+     "p-mh"
+    ],
+    [
+     "Well-being",
+     "p-wb"
+    ]
+   ],
+   "layer": "Population Health",
+   "why": "Connects health and human rights — equitable access for underserved populations",
+   "mission": "Ensure equitable access to healthcare for vulnerable and marginalized communities globally.",
+   "impact": "Expands care to underserved populations through community health and mental health programs.",
+   "features": [
+    "Community health programs",
+    "Mental health services",
+    "Social determinants focus",
+    "Global outreach",
+    "Policy advocacy"
+   ],
+   "healscript": [],
+   "healconnect": [
+    "SDoH integration",
+    "Equity-driven care routing",
+    "Community health worker tools"
+   ]
+  }
+ },
+ "categories": [
+  {
+   "id": "clinical",
+   "num": "1",
+   "title": "Clinical & Guideline Authorities",
+   "desc": "how care is defined",
+   "orgs": [
+    "apa",
+    "nice",
+    "samhsa"
+   ]
+  },
+  {
+   "id": "research",
+   "num": "2",
+   "title": "Research & Scientific Validation",
+   "desc": "how care is validated",
+   "orgs": [
+    "nimh",
+    "nih",
+    "cdc"
+   ]
+  },
+  {
+   "id": "wellbeing-prevention",
+   "num": "3",
+   "title": "Well-being & Prevention",
+   "desc": "how health is sustained",
+   "orgs": [
+    "gwi",
+    "nwi",
+    "iwbi",
+    "oxford"
+   ]
+  },
+  {
+   "id": "behavior",
+   "num": "4",
+   "title": "Behavior, Psychology & Flourishing",
+   "desc": "how humans actually improve",
+   "orgs": [
+    "ggsc",
+    "ppc",
+    "afh"
+   ]
+  },
+  {
+   "id": "integrative",
+   "num": "5",
+   "title": "Integrative & Whole-person Care",
+   "desc": "how care is unified",
+   "orgs": [
+    "nccih",
+    "acimh",
+    "ifm"
+   ]
+  },
+  {
+   "id": "systems",
+   "num": "6",
+   "title": "Population health",
+   "desc": "how care scales",
+   "orgs": [
+    "gallup",
+    "wef",
+    "shrm",
+    "oecd",
+    "undp",
+    "nami",
+    "hr"
+   ]
+  }
+ ],
+ "capabilities": [
+  {
+   "label": "Capability 1 - HealScript™",
+   "title": "Clinical Intelligence & Decision Support",
+   "subtitle": "CogneraAI™ powered clinical reasoning, structured diagnosis support, and guideline-aligned care pathways",
+   "aligned": [
+    "APA",
+    "NICE",
+    "SAMHSA"
+   ],
+   "delivers": [
+    "DSM-5-TR",
+    "Clinical guidelines",
+    "Psychiatric research",
+    "Continuing medical education",
+    "Policy advocacy"
+   ],
+   "why": "Moves providers from subjective, episodic decisions → standardized, evidence-based care at scale"
+  },
+  {
+   "label": "Capability 2 - Cognera Health",
+   "title": "Measurement-Based Care & Outcomes Intelligence",
+   "subtitle": "Continuous tracking, scoring, and outcome optimization",
+   "aligned": [
+    "NIMH",
+    "NIH",
+    "CDC"
+   ],
+   "delivers": [
+    "Automated assessment scoring & longitudinal tracking",
+    "Outcome trend analysis and recovery trajectories",
+    "Population-level analytics",
+    "Risk stratification models",
+    "Evidence-backed treatment adjustment signals"
+   ],
+   "why": "Transforms care from static snapshots → dynamic, data-driven longitudinal care"
+  },
+  {
+   "label": "Capability 3 - HealConnect™",
+   "title": "Continuous Engagement & Between-Session Care",
+   "subtitle": "24/7 engagement, adherence, and behavioral reinforcement",
+   "aligned": [
+    "Mental Health America",
+    "NAMI",
+    "Action for Happiness"
+   ],
+   "delivers": [
+    "Mood, symptom, and behavior tracking",
+    "Guided journaling & voice-enabled reflection",
+    "AI-driven nudges and reminders",
+    "Psychoeducation and self-guided tools",
+    "Continuous patient-provider connection"
+   ],
+   "why": "Closes the gap between sessions — where most risk and disengagement occur"
+  },
+  {
+   "label": "Capability 4 - Cognera Health",
+   "title": "Well-Being, Lifestyle & Preventive Care",
+   "subtitle": "Whole-person, lifestyle-driven, preventive health",
+   "aligned": [
+    "GWI",
+    "NWI",
+    "NCCIH"
+   ],
+   "delivers": [
+    "Wellness tracking (sleep, stress, activity, habits)",
+    "Behavioral pattern recognition",
+    "Preventive care insights and nudges",
+    "Mind-body interventions",
+    "Personalized well-being journeys"
+   ],
+   "why": "Expands care from treating illness → sustaining and optimizing health"
+  },
+  {
+   "label": "Capability 5 - Cognera Health",
+   "title": "Behavioral Science & Human Outcomes Optimization",
+   "subtitle": "Evidence-based behavior change and emotional well-being",
+   "aligned": [
+    "Greater Good Science Center",
+    "Positive Psychology Center"
+   ],
+   "delivers": [
+    "Strength-based interventions",
+    "Gratitude, resilience, and habit formation frameworks",
+    "Adaptive engagement based on behavioral signals",
+    "Cognitive and emotional pattern insights"
+   ],
+   "why": "Turns care into behavior change systems — not just clinical interventions"
+  },
+  {
+   "label": "Capability 6 - Cognera Health",
+   "title": "Integrative & Whole-Person Care Coordination",
+   "subtitle": "Biopsychosocial + lifestyle + multi-provider coordination",
+   "aligned": [
+    "Academic Consortium IH",
+    "IFM"
+   ],
+   "delivers": [
+    "Unified care plans across providers",
+    "Social determinants of health (SDoH) integration",
+    "Lifestyle + clinical data fusion",
+    "Referral and care coordination workflows",
+    "Whole-person health dashboards"
+   ],
+   "why": "Breaks silos → enables true longitudinal, collaborative care"
+  },
+  {
+   "label": "Capability 7 - Cognera Health",
+   "title": "Environment, Workplace & Contextual Well-Being",
+   "subtitle": "Context-aware well-being across life, work, and environment",
+   "aligned": [
+    "IWBI",
+    "Gallup",
+    "SHRM"
+   ],
+   "delivers": [
+    "Workplace stress and burnout signals",
+    "Engagement and productivity insights",
+    "Context-aware recommendations",
+    "Organizational wellness analytics"
+   ],
+   "why": "Extends care beyond clinical settings → into real-world daily environments"
+  },
+  {
+   "label": "Capability 8 - Cognera Health",
+   "title": "Population Health, Value-Based Care & System Intelligence",
+   "subtitle": "System-wide analytics, ROI, and value-based care enablement",
+   "aligned": [
+    "CMS",
+    "AHRQ",
+    "OECD"
+   ],
+   "delivers": [
+    "Population health dashboards",
+    "Cohort-level analytics and benchmarking",
+    "Outcome reporting for value-based care",
+    "Cost vs outcome optimization insights",
+    "Enterprise performance tracking"
+   ],
+   "why": "Aligns platform with payer models, ROI expectations, and system scalability"
+  },
+  {
+   "label": "Cognera Health — HealScript™ + HealConnect™",
+   "title": "Platform Alignment Summary",
+   "subtitle": "Clinical standards, science, engagement, prevention, and system ROI unified into one continuous care platform",
+   "aligned": [
+    "APA",
+    "NICE",
+    "NIH",
+    "NIMH",
+    "NAMI",
+    "MHA",
+    "GWI",
+    "NWI",
+    "UPenn",
+    "Berkeley",
+    "IFM",
+    "Gallup",
+    "IWBI",
+    "CMS",
+    "OECD"
+   ],
+   "delivers": [
+    "Clinical Intelligence",
+    "Scientific Validation",
+    "Continuous Engagement",
+    "Well-Being & Prevention",
+    "Behavioral Science",
+    "Whole-Person Care",
+    "Real-World Context",
+    "System ROI & Scale"
+   ],
+   "why": "Shows the combined HealScript™ + HealConnect™ market positioning across clinical, engagement, wellness, and system intelligence layers",
+   "summary": true
+  }
+ ]
+}
