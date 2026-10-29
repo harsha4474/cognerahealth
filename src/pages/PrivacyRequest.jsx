@@ -11,6 +11,7 @@ const pages = {
     pageTitle: 'Data Deletion Request',
     image: '/images/hero-data-deletion.webp',
     kind: 'Data Deletion Request',
+    notice: 'Cognera Health prefers that users submit data deletion requests through the HealConnect™ or HealScript™ in-product data deletion workflow so requests can be routed through the appropriate secure product process.',
     formTitle: 'Submit Data Deletion Request',
     callout: 'Use HealConnect™ or HealScript™ in-product deletion options.',
     relationships: ['Individual user', 'Patient or care recipient', 'Authorized representative', 'Customer administrator', 'Healthcare provider', 'Other'],
@@ -22,6 +23,7 @@ const pages = {
     pageTitle: 'Do Not Sell or Share',
     image: '/images/hero-do-not-sell-share.webp',
     kind: 'Do Not Sell or Share Request',
+    notice: 'Cognera Health prefers that users submit do-not-sell/share or privacy opt-out requests through the HealConnect™ or HealScript™ in-product privacy controls so requests can be routed through the appropriate secure product process.',
     formTitle: 'Submit Opt-Out Request',
     callout: 'Use HealConnect™ or HealScript™ in-product do-not-sell/share options.',
     relationships: ['Individual consumer', 'Patient or care recipient', 'Authorized agent', 'Customer administrator', 'Healthcare provider', 'Other'],
@@ -107,6 +109,7 @@ function PrivacyRequestPage({ cfg }) {
         title={data.title}
         lead={data.intro}
         image={cfg.image}
+        note={{ title: 'Please do not submit PHI, ePHI, or sensitive PII through this public website.', text: cfg.notice }}
         actions={[{ label: cfg.formTitle, to: '#request-form' }, { label: 'Privacy Policy', to: '/trust#privacy-policy' }]}
       />
       <Section tone="soft">

@@ -1,0 +1,82 @@
+{
+ "/about": {
+  "title": "About | Cognera Health",
+  "description": "Learn about Cognera Health, an AI-powered continuous care platform built for connected mental health, behavioral health, and wellness care."
+ },
+ "/careers": {
+  "title": "Careers | Cognera Health",
+  "description": "Explore careers at Cognera Health and help build AI-powered continuous care technology for mental health, behavioral health, and wellness."
+ },
+ "/cogneraai": {
+  "title": "CogneraAI | Cognera Health",
+  "description": "Explore CogneraAI, responsible assistive intelligence for continuous care workflows, clinical oversight, governance, and care coordination."
+ },
+ "/contact": {
+  "title": "Contact | Cognera Health",
+  "description": "Contact Cognera Health for platform, partnership, investor, compliance, press, career, or early access inquiries."
+ },
+ "/data-deletion": {
+  "title": "Data Deletion Request | Cognera Health",
+  "description": "Submit a Cognera Health data deletion, account deletion, app store data safety, or privacy request."
+ },
+ "/do-not-sell-or-share": {
+  "title": "Do Not Sell or Share My Personal Information | Cognera Health",
+  "description": "Submit a Cognera Health privacy opt-out request for do not sell, do not share, or state privacy rights where applicable."
+ },
+ "/early-access": {
+  "title": "Early Access | Cognera Health",
+  "description": "Request early access to Cognera Health's continuous care intelligence platform for mental health, behavioral health, and wellness teams."
+ },
+ "/healconnect": {
+  "title": "HealConnect | Cognera Health",
+  "description": "Explore HealConnect, Cognera Health's engagement layer for between-session support, tracking, guided reflection, and care continuity."
+ },
+ "/healscript": {
+  "title": "HealScript | Cognera Health",
+  "description": "Explore HealScript, Cognera Health's clinical workflow platform for documentation, assessments, insights, and continuous care coordination."
+ },
+ "/healscriptos": {
+  "title": "HealScript Operations Center | Cognera Health",
+  "description": "Explore the HealScript Operations Center for operational dashboards, care delivery visibility, workflow intelligence, and enterprise metrics."
+ },
+ "/": {
+  "title": "Cognera Health | Continuous Care Intelligence Platform",
+  "description": "Cognera Health is an AI-powered continuous care platform for mental health, behavioral health, wellness, and connected care delivery."
+ },
+ "/investors": {
+  "title": "Investors | Cognera Health",
+  "description": "Investor information for Cognera Health, an AI-powered continuous care platform transforming fragmented care into connected intelligence."
+ },
+ "/leadership": {
+  "title": "Leadership | Cognera Health",
+  "description": "Meet the Cognera Health leadership team building responsible AI, clinical workflow intelligence, and continuous care technology."
+ },
+ "/partnerships": {
+  "title": "Partnerships | Cognera Health",
+  "description": "Partner with Cognera Health to advance AI-powered continuous care, care coordination, interoperability, and healthcare innovation."
+ },
+ "/platform": {
+  "title": "Platform | Cognera Health",
+  "description": "Explore Cognera Health's continuous care intelligence platform for clinical workflows, engagement, coordination, analytics, and operations."
+ },
+ "/press": {
+  "title": "Press | Cognera Health",
+  "description": "Read Cognera Health news, announcements, press information, and updates on AI-powered continuous care innovation."
+ },
+ "/solutions": {
+  "title": "Solutions | Cognera Health",
+  "description": "Explore Cognera Health solutions for mental health, behavioral health, wellness, clinical workflows, engagement, and enterprise care delivery."
+ },
+ "/standards": {
+  "title": "Standards | Cognera Health",
+  "description": "Review standards and authority organizations that inform Cognera Health's approach to responsible, evidence-aligned healthcare technology."
+ },
+ "/trust": {
+  "title": "Trust Center, Privacy, Compliance & Responsible AI | Cognera Health",
+  "description": "Review Cognera Health privacy, security, compliance governance, data retention, secure disposal, responsible AI, and enterprise trust practices for healthcare organizations."
+ },
+ "/who-we-serve": {
+  "title": "Who We Serve | Cognera Health",
+  "description": "See how Cognera Health supports clinicians, care teams, organizations, employers, schools, payers, and individuals."
+ }
+}

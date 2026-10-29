@@ -32,10 +32,14 @@ const companionFeatures = [
 ]
 
 const progress = [
-  { title: 'Anxiety Management', provider: 'Dr. Sarah Johnson', pct: 45, note: 'Making good progress with anxiety reduction techniques' },
-  { title: 'Depression Care', provider: 'Dr. James Wilson', pct: 60, note: 'Showing improvement in mood and daily activities' },
-  { title: 'Stress Management', provider: 'Dr. Emily Chen', pct: 70, note: 'Successfully implementing stress reduction strategies' },
-  { title: 'Sleep Improvement', provider: 'Dr. Michael Brown', pct: 35, note: 'Working on establishing better sleep patterns' },
+  { title: 'Anxiety Management', provider: 'Dr. Sarah Johnson', next: '2026-02-05', pct: 45, steps: ['Initial Assessment', 'CBT Sessions', 'Mindfulness Training', 'Progress Review'], note: 'Making good progress with anxiety reduction techniques' },
+  { title: 'Depression Care', provider: 'Dr. James Wilson', next: '2026-02-07', pct: 60, steps: ['Clinical Evaluation', 'Therapy Sessions', 'Lifestyle Changes', 'Support Group'], note: 'Showing improvement in mood and daily activities' },
+  { title: 'Stress Management', provider: 'Dr. Emily Chen', next: '2026-02-08', pct: 70, steps: ['Stress Assessment', 'Relaxation Techniques', 'Work-Life Balance', 'Follow-up'], note: 'Successfully implementing stress reduction strategies' },
+  { title: 'Sleep Improvement', provider: 'Dr. Michael Brown', next: '2026-02-09', pct: 35, steps: ['Sleep Study', 'Habit Formation', 'Sleep Hygiene', 'Progress Check'], note: 'Working on establishing better sleep patterns' },
+  { title: 'Mindfulness Journey', provider: 'Lisa Anderson, LMHC', next: '2026-02-10', pct: 40, steps: ['Introduction', 'Daily Practice', 'Advanced Techniques', 'Maintenance'], note: 'Developing consistent mindfulness practice' },
+  { title: 'Emotional Wellness', provider: 'Dr. Rachel Green', next: '2026-02-12', pct: 65, steps: ['Initial Consultation', 'Emotional Mapping', 'Coping Strategies', 'Review & Adjust'], note: 'Good progress in emotional regulation' },
+  { title: 'Mental Fitness', provider: 'Dr. David Miller', next: '2026-02-14', pct: 30, steps: ['Baseline Assessment', 'Cognitive Training', 'Memory Exercises', 'Performance Review'], note: 'Engaging well with cognitive exercises' },
+  { title: 'Relationship Counseling', provider: 'Dr. Amanda Taylor', next: '2026-02-15', pct: 55, steps: ['Joint Assessment', 'Communication Skills', 'Conflict Resolution', 'Progress Review'], note: 'Improving communication patterns' },
 ]
 
 const privacyControls = [
@@ -214,16 +218,21 @@ export default function HealConnect() {
           {progress.map((p) => (
             <article key={p.title} className="card">
               <h3>{p.title}</h3>
-              <p className="progress-provider">Provider: {p.provider}</p>
+              <p className="progress-provider">Provider: {p.provider}<br />Next: {p.next}</p>
               <div className="progress-bar" role="img" aria-label={`Progress ${p.pct}%`}>
                 <span style={{ width: `${p.pct}%` }} />
               </div>
               <p className="progress-pct">Progress {p.pct}%</p>
+              <ol className="progress-steps">
+                {p.steps.map((st, i) => (
+                  <li key={st} className={i < Math.round((p.pct / 100) * p.steps.length) ? 'is-done' : ''}>{st}</li>
+                ))}
+              </ol>
               <p>{p.note}</p>
             </article>
           ))}
         </div>
-        <Disclaimer>Illustrative preview of the HealConnect™ experience. Names and figures are examples only.</Disclaimer>
+        <Disclaimer>Illustrative preview of the HealConnect™ experience. Names, dates, and figures are examples only.</Disclaimer>
       </Section>
 
       <Section>
