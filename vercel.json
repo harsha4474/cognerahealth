@@ -7,22 +7,22 @@
   ],
   "redirects": [
     {
-      "source": "/documents/Cognera Health - Privacy Policy & Data Protection Program Protected.pdf",
+      "source": "/documents/(.*)Privacy(.*)Program(.*)Protected\\.pdf",
       "destination": "/documents/cognera-health-privacy-policy-data-protection-program.pdf",
       "permanent": true
     },
     {
-      "source": "/documents/Cognera Health - Platform Governance, Terms, Security, Privacy, Accessibility & Responsible AI Framework Protected.pdf",
+      "source": "/documents/(.*)Platform(.*)Governance(.*)Protected\\.pdf",
       "destination": "/documents/cognera-health-platform-governance-terms-responsible-ai-framework.pdf",
       "permanent": true
     },
     {
-      "source": "/documents/Cognera Health - Compliance Governance Framework Protected.pdf",
+      "source": "/documents/(.*)Compliance(.*)Governance(.*)Protected\\.pdf",
       "destination": "/documents/cognera-health-compliance-governance-framework.pdf",
       "permanent": true
     },
     {
-      "source": "/documents/Cognera Health - Data Retention, Deletion, and Secure Disposal Policy Protected.pdf",
+      "source": "/documents/(.*)Data(.*)Retention(.*)Protected\\.pdf",
       "destination": "/documents/cognera-health-data-retention-deletion-secure-disposal-policy.pdf",
       "permanent": true
     }
