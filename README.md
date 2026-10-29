@@ -1,22 +1,47 @@
 # Cognera Health — Website
 
-Marketing website for [Cognera Health](https://www.cognerahealth.ai), the AI-powered continuous care platform for mental health, behavioral health, and wellness.
+React rebuild of [cognerahealth.ai](https://www.cognerahealth.ai) with a new UI/UX. It keeps the same content and the same inner pages.
 
-Built with React + Vite.
+Built with React 19, React Router and Vite. There is no CSS framework: all styles live in `src/styles/global.css`, and the design tokens are at the top of that file.
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev      # start dev server at http://localhost:5173
-npm run build    # production build into dist/
-npm run preview  # preview the production build
+npm run dev      # http://localhost:5173
+npm run build    # production build → dist/
+npm run preview  # serve the production build
 ```
 
-## Structure
+## Pages
 
-- `src/content.js` — all page copy (nav, audiences, capabilities, pillars, footer). Edit text here.
-- `src/components/` — page sections (Header, Hero, Sections, EarlyAccess, Footer).
-- `src/styles.css` — design tokens (colors, fonts) at the top, then section styles.
+| Route | Page |
+| --- | --- |
+| `/` | Home |
+| `/platform`, `/cogneraai`, `/healscript`, `/healconnect`, `/solutions` | Product |
+| `/who-we-serve`, `/investors` | Audiences |
+| `/trust`, `/standards` | Trust Center (privacy policy, terms, compliance, governance…) and Standards explorer |
+| `/about`, `/leadership`, `/partnerships`, `/press`, `/careers` | Company |
+| `/contact`, `/early-access` | Contact and the early-access form |
+| `/data-deletion`, `/do-not-sell-or-share` | Privacy request forms |
 
-The early-access form is front-end only; connect `handleSubmit` in `src/components/EarlyAccess.jsx` to a form service or API.
+Trust sections are deep-linkable, e.g. `/trust#privacy-policy` or `/trust#terms-conditions`.
+
+## Where the content lives
+
+- Marketing copy sits inline in each page under `src/pages/`.
+- Long legal copy (Trust Center and the privacy request pages) is in `src/content/legal/*.json`. It is sanitized HTML taken from the live site.
+- The Standards organizations, categories and capabilities are in `src/content/standards-data.json`.
+- Press releases are in `src/content/press.json`.
+- Navigation and the footer are configured in `src/nav.js`.
+- Images are in `public/images/`. They are the live site's images, resized and converted to WebP.
+
+## Forms
+
+The early-access and privacy request forms don't need a backend. Like the live site, they validate the input and then open a prefilled email (`mailto:`) in the visitor's email client.
+
+## Deployment
+
+This is a single-page app, so every route must serve `index.html`. `vercel.json` (Vercel) and `public/_redirects` (Netlify) already handle this.
+
+The governance PDFs linked from the Trust Center point to `https://www.cognerahealth.ai/documents/…`. They total about 117 MB, so they are not stored in this repo.
