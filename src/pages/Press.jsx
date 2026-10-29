@@ -29,11 +29,10 @@ export default function Press() {
       <Section tone="soft">
         <SectionHeader eyebrow="Press" title="Latest Cognera Health Updates" lead="Announcements, recognitions, and media coverage." />
         <div className="press-layout">
-          <div className="press-list" role="list">
+          <div className="press-list">
             {press.map((p) => (
               <button
                 key={p.id}
-                role="listitem"
                 className={`press-item${p.id === activeId ? ' is-active' : ''}`}
                 aria-pressed={p.id === activeId}
                 onClick={() => select(p.id)}
