@@ -18,7 +18,6 @@ export default function About() {
         title="About Cognera Health"
         lead="Cognera Health™ is a category-defining technology platform transforming care delivery through CogneraAI™—making mental health, behavioral health, and wellness care more continuous, connected, and effective."
         image="/images/teams_meeting.webp"
-        actions={[{ label: 'Leadership', to: '/leadership' }, { label: 'Careers', to: '/careers' }]}
       />
 
       <Section>

@@ -10,7 +10,6 @@ export default function Careers() {
         title="Join Our Mission"
         lead="Building the future of care through innovative technology and cognitive and collaborative intelligence™—join us and make a meaningful impact."
         image="/images/careers.webp"
-        actions={[{ label: 'Apply Now', to: 'mailto:careers@cognerahealth.ai' }]}
       />
 
       <Section>

@@ -55,14 +55,9 @@ export default function Home() {
         actions={[
           { label: 'Explore CogneraAI™', to: '/cogneraai' },
           { label: 'Explore Platform', to: '/platform' },
+          { label: 'Explore Solutions', to: '/solutions' },
         ]}
         image="/images/hero_woman_smiling.webp"
-        related={[
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-          { label: 'Who We Serve', to: '/who-we-serve' },
-        ]}
       />
 
       <Section>
@@ -142,10 +137,16 @@ export default function Home() {
           title="Transform care delivery"
           text="Join early access and experience continuous, connected, intelligent care."
           actions={[
-            { label: 'Get Early Access', to: '/early-access' },
+            { label: 'Explore Platform', to: '/platform' },
+            { label: 'Explore Solutions', to: '/solutions' },
             { label: 'Who We Serve', to: '/who-we-serve' },
+            { label: 'Get Early Access', to: '/early-access' },
           ]}
         />
+        <div className="container home-partners">
+          <span>Partners</span>
+          <img src="/images/microsoft-for-startups.png" alt="Microsoft for Startups" width="240" height="101" loading="lazy" />
+        </div>
       </div>
     </>
   )

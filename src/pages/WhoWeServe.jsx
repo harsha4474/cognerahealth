@@ -1,4 +1,4 @@
-import { usePageTitle, PageHero, Section, SectionHeader, CardGrid, Checklist, CtaBand } from '../components/ui'
+import { usePageTitle, PageHero, Section, SectionHeader, CardGrid, Checklist } from '../components/ui'
 import { people } from './HealScript'
 
 const orgs = [
@@ -20,15 +20,13 @@ export default function WhoWeServe() {
         title="Serving All Healthcare Organizations"
         lead="Transform your care delivery with our comprehensive CogneraAI™ powered platform."
         actions={[
+          { label: 'About CogneraAI™', to: '/cogneraai' },
           { label: 'About Platform', to: '/platform' },
           { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
+          { label: 'About HealConnect™', to: '/healconnect' },
         ]}
         image="/images/whoweserve.webp"
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-        ]}
       />
 
       <Section tone="soft">
@@ -53,11 +51,6 @@ export default function WhoWeServe() {
         </div>
       </Section>
 
-      <CtaBand
-        title="Transform care delivery"
-        text="Join early access and experience continuous, connected, intelligent care."
-        actions={[{ label: 'Get Early Access', to: '/early-access' }, { label: 'Contact us', to: '/contact' }]}
-      />
     </>
   )
 }

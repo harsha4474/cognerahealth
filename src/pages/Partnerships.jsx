@@ -37,10 +37,6 @@ export default function Partnerships() {
         eyebrow="Partnerships"
         title="Join our healthcare innovation network"
         lead="Partner with Cognera Health™ to advance the shift from fragmented, episodic care to continuous, integrated, and intelligent care, powered by CogneraAI™ and Cognitive and Collaborative Intelligence™."
-        actions={[
-          { label: 'Contact Partnership Team', to: PARTNER_MAIL },
-          { label: 'Request Early Access', to: '/early-access' },
-        ]}
         image="/images/partnerships.webp"
       >
         <p className="hero-tagline">Build the future of continuous care together.</p>

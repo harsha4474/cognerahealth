@@ -103,17 +103,14 @@ export default function HealConnect() {
         title="HealConnect™"
         lead="A CogneraAI™-powered engagement platform that keeps individuals supported between sessions while giving care teams earlier visibility into needs, progress, and risk signals."
         actions={[
-          { label: 'Request early access', to: '/early-access' },
-          { label: 'Explore HealScript™', to: '/healscript' },
+          { label: 'About CogneraAI™', to: '/cogneraai' },
+          { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
         ]}
         image="/images/outcomes_woman_bed_phone.webp"
         imageAlt="Person checking in on HealConnect from their phone"
         chips={['Between-session support', 'Mood and behavior tracking', 'Care-team visibility', 'Privacy controls']}
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'Platform', to: '/platform' },
-          { label: 'Solutions', to: '/solutions' },
-        ]}
       />
 
       <Section>
@@ -167,6 +164,9 @@ export default function HealConnect() {
           lead="HealConnect™ combines individual-facing support with provider-guided visibility, helping make between-session activity clinically useful."
         />
         <CardGrid items={capabilities} cols={3} />
+        <div className="actions">
+          <Button to="/healscript" variant="secondary" icon="arrowRight">Explore HealScript™</Button>
+        </div>
       </Section>
 
       <Section tone="soft">
@@ -311,7 +311,9 @@ export default function HealConnect() {
         <CtaBand
           title="Begin Your Wellness Journey Today"
           text="Take the first step toward a healthier, more balanced life. Contact your provider for more information."
-          actions={[{ label: 'Request early access', to: '/early-access' }, { label: 'Contact us', to: '/contact' }]}
+          actions={[
+            { label: 'Request early access', to: '/early-access' },
+          ]}
         />
       </div>
     </>

@@ -58,15 +58,13 @@ export default function Platform() {
         actions={[
           { label: 'Explore CogneraAI™', to: '/cogneraai' },
           { label: 'Explore Solutions', to: '/solutions' },
+          { label: 'Explore HealScript™', to: '/healscript' },
+          { label: 'Explore HealConnect™', to: '/healconnect' },
+          { label: 'Who We Serve', to: '/who-we-serve' },
         ]}
         image="/images/chplatform.webp"
         imageFit="contain"
         imageAlt="Cognera Health platform dashboards on desktop and mobile"
-        related={[
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-          { label: 'Who We Serve', to: '/who-we-serve' },
-        ]}
       >
         <p className="hero-tagline">
           Reduce administrative burden. Improve clinical visibility. Strengthen individual engagement. Enable earlier intervention and more proactive care.
@@ -194,6 +192,7 @@ export default function Platform() {
           text="See how Cognera Health™ enables continuous, connected care across clinicians, individuals, and operations—delivering real-time visibility, stronger engagement, and more coordinated, data-driven outcomes."
           actions={[
             { label: 'Request a demo', to: '/early-access' },
+            { label: 'Explore Solutions', to: '/solutions' },
             { label: 'Talk to our team', to: '/contact' },
           ]}
         />

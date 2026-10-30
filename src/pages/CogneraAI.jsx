@@ -53,15 +53,13 @@ export default function CogneraAI() {
         lead="CogneraAI™ is the intelligence foundation powering continuous, connected mental health, behavioral health, and wellness care across the Cognera Health™ ecosystem."
         actions={[
           { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
+          { label: 'About HealConnect™', to: '/healconnect' },
           { label: 'Legal & Governance', to: '/trust#governance-program-structure' },
         ]}
         image="/images/cs4.webp"
         imageAlt="Clinician working alongside assistive AI"
-        related={[
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-        ]}
       />
 
       <Section>
