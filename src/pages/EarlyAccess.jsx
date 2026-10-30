@@ -64,7 +64,6 @@ export default function EarlyAccess() {
         title="Step into the future of human-centered, intelligent care."
         lead="Be among the first to experience our CogneraAI™-powered healthcare platform."
         image="/images/earlyaccess.webp"
-        actions={[{ label: 'Request access', to: '#early-access' }]}
       />
 
       <Section tone="soft" id="early-access">

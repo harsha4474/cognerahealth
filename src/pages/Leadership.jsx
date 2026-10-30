@@ -16,7 +16,6 @@ export default function Leadership() {
         title="Leadership Driving Cognera Health™"
         lead="Advancing care delivery by combining human expertise with intelligent technology that cohesively unifies data, insight, and action across the full continuum of care."
         image="/images/teams_meeting.webp"
-        actions={[{ label: 'Read the latest news', to: '/press' }, { label: 'About us', to: '/about' }]}
       />
 
       <Section>

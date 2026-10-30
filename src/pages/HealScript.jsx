@@ -141,19 +141,16 @@ export default function HealScript() {
         title="HealScript™"
         lead="A clinical and operational intelligence platform that helps providers reduce documentation burden, strengthen clinical decision-making, coordinate care, and maintain visibility between visits."
         actions={[
-          { label: 'Request early access', to: '/early-access' },
-          { label: 'HealScript™ Operations Center', to: '#operations-dashboard' },
+          { label: 'About CogneraAI™', to: '/cogneraai' },
+          { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™ Operations Center', to: '#operations-dashboard' },
+          { label: 'About HealConnect™', to: '/healconnect' },
+          { label: 'Who We Serve', to: '/who-we-serve' },
         ]}
         image="/images/chhs1.webp"
         imageAlt="Clinician and client in a session supported by HealScript"
         chips={['AI-assisted documentation', 'Measurement-based care', 'Operational visibility', 'HealConnect integration']}
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'Platform', to: '/platform' },
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealConnect™', to: '/healconnect' },
-          { label: 'Who We Serve', to: '/who-we-serve' },
-        ]}
       />
 
       <Section>
@@ -282,7 +279,9 @@ export default function HealScript() {
       <CtaBand
         title="Ready to enhance your practice?"
         text="Explore how HealScript™ can help your organization reduce documentation burden, strengthen clinical visibility, and deliver continuous, coordinated care."
-        actions={[{ label: 'Request early access', to: '/early-access' }, { label: 'Talk to our team', to: '/contact' }]}
+        actions={[
+            { label: 'Request early access', to: '/early-access' },
+          ]}
       />
     </>
   )

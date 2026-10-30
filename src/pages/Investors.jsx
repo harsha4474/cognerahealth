@@ -28,15 +28,13 @@ export default function Investors() {
         note={{ title: 'Backed by clinicians.', text: 'Powered by CogneraAI™.' }}
         actions={[
           { label: 'Request investor deck', to: '/early-access#early-access' },
+          { label: 'About CogneraAI™', to: '/cogneraai' },
           { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
+          { label: 'About HealConnect™', to: '/healconnect' },
         ]}
         image="/images/investors.webp"
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-        ]}
       />
 
       <Section>
@@ -102,7 +100,9 @@ export default function Investors() {
         eyebrow="Our commitment"
         title="Category-defining, closed-loop care technology built to scale worldwide"
         text="Cognera Health™ delivers continuous, integrated, and comprehensive care technology, transforming outcomes while expanding global access and engagement. Ultimately save lives."
-        actions={[{ label: 'Request investor deck', to: '/early-access#early-access' }, { label: 'Contact founders', to: '/contact' }]}
+        actions={[
+            { label: 'Request investor deck', to: '/early-access#early-access' },
+          ]}
       />
       </div>
     </>

@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { PageHero, Section, SectionHeader, CtaBand } from '../components/ui'
+import { PageHero, Section, SectionHeader } from '../components/ui'
 import Icon from '../components/Icon'
 import { Disclaimer } from '../components/ProductBits'
 import sections from '../content/operations.json'
@@ -34,11 +34,13 @@ export default function HealScriptOS() {
           'OperationsAI™ Assistant — site performance review, prior-period change detection, and operations intelligence summaries.',
           'Explore every operational, clinical, engagement, financial, technical, and enterprise metric tracked across the HealScript™ Operations Center.',
         ]}
-        actions={[{ label: 'Explore metrics', to: '#metrics' }, { label: 'About HealScript™', to: '/healscript' }]}
+        actions={[
+          { label: 'About CogneraAI™', to: '/cogneraai' },
+          { label: 'About HealScript™', to: '/healscript' },
+        ]}
         image="/images/chopscenter.webp"
         imageFit="contain"
         imageAlt="HealScript Operations Intelligence dashboard preview"
-        related={[{ label: 'CogneraAI™', to: '/cogneraai' }, { label: 'HealScript™', to: '/healscript' }]}
       >
         <Disclaimer>Disclaimer: Preview version only. Dashboard metrics shown are illustrative examples. Final live system functionality and UI may vary.</Disclaimer>
       </PageHero>
@@ -101,13 +103,6 @@ export default function HealScriptOS() {
         </div>
       </Section>
 
-      <div className="tone-soft">
-        <CtaBand
-          title="Ready to enhance your practice?"
-          text="Explore how HealScript™ can help your organization reduce documentation burden, strengthen clinical visibility, and deliver continuous, coordinated care."
-          actions={[{ label: 'Request early access', to: '/early-access' }, { label: 'About HealScript™', to: '/healscript' }]}
-        />
-      </div>
     </>
   )
 }

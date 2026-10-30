@@ -46,15 +46,15 @@ export default function Trust() {
         eyebrow="Trust Center • Security • Privacy • Compliance • Responsible AI"
         title="Trusted by Design. Secure by Default. Governed Responsibly."
         lead="Cognera Health™ is built with privacy, security, compliance, responsible AI governance, and operational resilience at its core for mental health, behavioral health, wellness, integrated care, and continuous care delivery."
+        actions={[
+          { label: 'About CogneraAI™', to: '/cogneraai' },
+          { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
+          { label: 'About HealConnect™', to: '/healconnect' },
+        ]}
         image="/images/CHAI.webp"
         imageAlt="Clinician collaborating with responsible AI"
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'Platform', to: '/platform' },
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-        ]}
       />
 
       <section className="section tone-soft trust-section">
@@ -109,7 +109,11 @@ export default function Trust() {
         <CtaBand
           title="Built for trust. Designed for care."
           text="Explore how Cognera Health™ delivers continuous, secure, responsible, and clinically grounded care technology."
-          actions={[{ label: 'Explore Platform', to: '/platform' }, { label: 'Contact Us', to: '/contact' }]}
+          actions={[
+            { label: 'Explore Platform', to: '/platform' },
+            { label: 'Explore Solutions', to: '/solutions' },
+            { label: 'Contact Us', to: '/contact' },
+          ]}
         />
       </div>
     </>

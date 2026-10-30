@@ -83,15 +83,13 @@ export default function Solutions() {
         actions={[
           { label: 'Explore CogneraAI™', to: '/cogneraai' },
           { label: 'Explore Platform', to: '/platform' },
+          { label: 'Explore HealScript™', to: '/healscript' },
+          { label: 'Explore HealConnect™', to: '/healconnect' },
+          { label: 'Who We Serve', to: '/who-we-serve' },
         ]}
         image="/images/chsolutions1.webp"
         imageFit="contain"
         imageAlt="Cognera Health, HealScript and HealConnect product overview"
-        related={[
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
-          { label: 'Who We Serve', to: '/who-we-serve' },
-        ]}
       />
 
       <Section tone="soft">

@@ -1,72 +1,38 @@
+// Same menu, names and order as the original cognerahealth.ai site.
 export const mainNav = [
-  {
-    label: 'Product',
-    children: [
-      { label: 'Platform', to: '/platform', desc: 'The continuous care intelligence layer' },
-      { label: 'CogneraAI™', to: '/cogneraai', desc: 'Responsible, assistive intelligence' },
-      { label: 'HealScript™', to: '/healscript', desc: 'Clinical & operational intelligence' },
-      { label: 'HealConnect™', to: '/healconnect', desc: 'Continuous engagement between sessions' },
-      { label: 'Operations Center', to: '/healscriptos', desc: 'HealScript™ operations intelligence' },
-      { label: 'Solutions', to: '/solutions', desc: 'Outcomes & capabilities' },
-    ],
-  },
+  { label: 'Platform', to: '/platform' },
+  { label: 'Solutions', to: '/solutions' },
   { label: 'Who We Serve', to: '/who-we-serve' },
   { label: 'Investors', to: '/investors' },
+  { label: 'Trust', to: '/trust' },
+  { label: 'Standards', to: '/standards' },
   {
-    label: 'Trust',
+    label: 'About',
+    to: '/about',
     children: [
-      { label: 'Trust Center', to: '/trust', desc: 'Privacy, security, compliance & governance' },
-      { label: 'Standards', to: '/standards', desc: 'Clinical, research & well-being authorities' },
-    ],
-  },
-  {
-    label: 'Company',
-    children: [
-      { label: 'About', to: '/about', desc: 'Vision, mission & values' },
-      { label: 'Leadership', to: '/leadership', desc: 'Advisory board & leadership team' },
-      { label: 'Partnerships', to: '/partnerships', desc: 'Join our innovation network' },
-      { label: 'Press', to: '/press', desc: 'News & updates' },
-      { label: 'Careers', to: '/careers', desc: 'Join our mission' },
+      { label: 'Company', to: '/about' },
+      { label: 'Leadership', to: '/leadership' },
+      { label: 'Partnerships', to: '/partnerships' },
+      { label: 'Press', to: '/press' },
+      { label: 'Careers', to: '/careers' },
     ],
   },
   { label: 'Contact', to: '/contact' },
 ]
 
-export const footerNav = [
-  {
-    title: 'Product',
-    links: [
-      { label: 'Platform', to: '/platform' },
-      { label: 'CogneraAI™', to: '/cogneraai' },
-      { label: 'HealScript™', to: '/healscript' },
-      { label: 'HealConnect™', to: '/healconnect' },
-      { label: 'Operations Center', to: '/healscriptos' },
-      { label: 'Solutions', to: '/solutions' },
-      { label: 'Who We Serve', to: '/who-we-serve' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About Us', to: '/about' },
-      { label: 'Leadership', to: '/leadership' },
-      { label: 'Partnerships', to: '/partnerships' },
-      { label: 'Investors', to: '/investors' },
-      { label: 'Press', to: '/press' },
-      { label: 'Careers', to: '/careers' },
-    ],
-  },
-  {
-    title: 'Trust',
-    links: [
-      { label: 'Trust Center', to: '/trust' },
-      { label: 'Standards', to: '/standards' },
-      { label: 'Privacy Policy', to: '/trust#privacy-policy' },
-      { label: 'Terms & Conditions', to: '/trust#terms-conditions' },
-      { label: 'Data Deletion', to: '/data-deletion' },
-      { label: 'Do Not Sell or Share', to: '/do-not-sell-or-share' },
-    ],
-  },
+// Footer "Company" links, in the original site's order.
+export const footerLinks = [
+  { label: 'Platform', to: '/platform' },
+  { label: 'Who We Serve', to: '/who-we-serve' },
+  { label: 'About Us', to: '/about' },
+  { label: 'Press', to: '/press' },
+  { label: 'Solutions', to: '/solutions' },
+  { label: 'Investors', to: '/investors' },
+  { label: 'Leadership', to: '/leadership' },
+  { label: 'Careers', to: '/careers' },
+  { label: 'Trust', to: '/trust' },
+  { label: 'Standards', to: '/standards' },
+  { label: 'Partnerships', to: '/partnerships' },
 ]
 
 export const LINKEDIN = 'https://www.linkedin.com/company/cognerahealth'

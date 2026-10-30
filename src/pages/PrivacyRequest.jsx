@@ -112,7 +112,7 @@ function PrivacyRequestPage({ cfg }) {
         lead={data.intro}
         image={cfg.image}
         note={{ title: 'Please do not submit PHI, ePHI, or sensitive PII through this public website.', text: cfg.notice }}
-        actions={[{ label: cfg.formTitle, to: '#request-form' }, { label: 'Privacy Policy', to: '/trust#privacy-policy' }]}
+        actions={[{ label: 'Privacy Policy', to: '/trust#privacy-policy' }]}
       />
       <Section tone="soft">
         <div className="request-layout">

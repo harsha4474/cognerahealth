@@ -21,7 +21,6 @@ function Dropdown({ item, open, onOpen, onClose }) {
         {item.children.map((c) => (
           <Link key={c.to} to={c.to} className="nav-menu-link" role="menuitem" onClick={onClose}>
             <strong>{c.label}</strong>
-            <span>{c.desc}</span>
           </Link>
         ))}
       </div>
@@ -109,7 +108,6 @@ export default function Header() {
       <div className={`drawer${drawer ? ' is-open' : ''}`} aria-hidden={!drawer} id="mobile-menu">
         <nav className="drawer-body" aria-label="Mobile">
           {mainNav
-            .filter((item) => item.to !== '/contact')
             .map((item) =>
               item.children ? (
                 <div key={item.label} className={`drawer-group${openGroup === item.label ? ' is-open' : ''}`}>
@@ -131,7 +129,6 @@ export default function Header() {
                           tabIndex={openGroup === item.label ? 0 : -1}
                         >
                           <strong>{c.label}</strong>
-                          <span>{c.desc}</span>
                         </Link>
                       ))}
                     </div>
@@ -148,9 +145,6 @@ export default function Header() {
         <div className="drawer-footer">
           <Link to="/early-access" className="btn btn-primary">
             Get early access
-          </Link>
-          <Link to="/contact" className="btn btn-secondary">
-            Contact
           </Link>
         </div>
       </div>

@@ -100,14 +100,14 @@ export default function Standards() {
         eyebrow="Standards"
         title="Authority Organizations"
         lead="Trusted clinical standards, scientific research, behavioral science, and global well-being frameworks guiding everything we build."
-        image="/images/standards.webp"
-        related={[
-          { label: 'CogneraAI™', to: '/cogneraai' },
-          { label: 'Platform', to: '/platform' },
-          { label: 'Solutions', to: '/solutions' },
-          { label: 'HealScript™', to: '/healscript' },
-          { label: 'HealConnect™', to: '/healconnect' },
+        actions={[
+          { label: 'About CogneraAI™', to: '/cogneraai' },
+          { label: 'About Platform', to: '/platform' },
+          { label: 'About Solutions', to: '/solutions' },
+          { label: 'About HealScript™', to: '/healscript' },
+          { label: 'About HealConnect™', to: '/healconnect' },
         ]}
+        image="/images/standards.webp"
       />
 
       <Section>
